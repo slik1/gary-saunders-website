@@ -1,0 +1,100 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+$dark-primary-text: rgba(#3b3b3b, 0.87);
+$dark-secondary-text: rgba(#3b3b3b, 0.54);
+$dark-disabled-text: rgba(#3b3b3b, 0.38);
+$dark-dividers: rgba(#3b3b3b, 0.12);
+$dark-focused: rgba(#3b3b3b, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$mat-gary-green: (
+    50 : #eff9e4,
+    100 : #d7f0bb,
+    200 : #bde78e,
+    300 : #a2dd61,
+    400 : #8ed53f,
+    500 : #7ace1d,
+    600 : #72c91a,
+    700 : #67c215,
+    800 : #5dbc11,
+    900 : #4ab00a,
+    A100 : #e8ffdc,
+    A200 : #c6ffa9,
+    A400 : #a4ff76,
+    A700 : #93ff5d,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-gary-purple: (
+    50 : #e9e1ec,
+    100 : #c8b3cf,
+    200 : #a480af,
+    300 : #804d8e,
+    400 : #642776,
+    500 : #49015e,
+    600 : #420156,
+    700 : #39014c,
+    800 : #310142,
+    900 : #210031,
+    A100 : #c169ff,
+    A200 : #ac36ff,
+    A400 : #9703ff,
+    A700 : #8900e9,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+
+
+
+
+
+$gary-primary: mat-palette($mat-gary-green);
+$gary-accent: mat-palette($mat-gary-purple);
+$gary-warn: mat-palette($mat-red);
+
+$gary-theme: mat-light-theme(
+    $gary-primary, $gary-accent, $gary-warn
+);
+
+
+@include angular-material-theme($gary-theme);
+
