@@ -1,0 +1,80 @@
+app-root{
+
+    // .main-container{
+
+    //     display: block;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     background-color: #ccc;
+
+
+    //     .inner-container{
+
+    //         display: flex;
+
+    //         .left{
+    //             background-color: #ff6600;
+    //         }
+    
+    //         .right{
+    //             background-color: #fff;
+    //         }
+    //     }
+
+
+    // }
+
+    .mat-drawer-container{
+        height: 100%;
+    }
+
+    // .mat-drawer-content{
+    //     padding: 1rem;
+    // }
+
+    // .mat-drawer-inner-container{
+    //     padding: 1rem;
+    // }
+
+    mat-sidenav {
+        width: 300px;
+      }
+
+    // .mat-grid-list{
+    //     background: url('../assets/background-design.svg');
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     height: 100vh;
+    // }
+
+    .mat-grid-list{
+        height: calc(100% - 132px);
+        width: 100%;
+        @media screen and (max-width: 114px){
+            height: calc(100% - 114px);
+        }
+    }
+
+.mat-toolbar.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    justify-content: center;
+    background-color: #333;
+}
+
+
+// audio::-webkit-media-controls-play-button,
+//      audio::-webkit-media-controls-panel {
+//      background-color: #333;
+//      color: #fff;
+//      }
+    // .left{
+    //     background-color: #ff6600;
+    // }
+
+    // .right{
+    //     background-color: #fff;
+    // }
+}
