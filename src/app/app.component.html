@@ -1,6 +1,5 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
-               (closed)="events.push('close!')">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
 
 
     <mat-nav-list>
@@ -25,21 +24,29 @@
         <button mat-icon-button aria-label="menu button" (click)="sidenav.toggle()">
           <mat-icon>lunch_dining</mat-icon>
         </button>
+
+
+        <div class="button-container">
+          <mat-slide-toggle
+              class="example-margin"
+              [color]="color"
+              [checked]="checked"
+              [(ngModel)]="checked"
+              [disabled]="disabled"
+              (change)="changed()">
+            Monster mode
+          </mat-slide-toggle>
+        </div>
     </mat-toolbar>
 
     
-    <mat-grid-list cols="1" rowHeight="fit">
+    <mat-grid-list cols="1" rowHeight="fit" [ngClass]="{'active': checked}">
       
       <mat-grid-tile>      
-        <div class="button-container">
-        <mat-slide-toggle
-            class="example-margin"
-            [color]="color"
-            [checked]="checked"
-            [disabled]="disabled">
-          Monster mode
-        </mat-slide-toggle>
-      </div>
+        <div class="monster" *ngIf="checked">
+          <img src="../assets/monster_scroobly.gif" />
+        </div>
+
       <router-outlet></router-outlet>
     </mat-grid-tile>
 
@@ -50,8 +57,8 @@
 
 </mat-sidenav-container>
 
-<mat-toolbar class="footer">
-    <audio controls>
+<mat-toolbar class="footer" [ngClass]="{'active': checked}">
+    <audio controls #musicPlayer>
       <source src="../assets/ok11.mp3" type="audio/mpeg">
     </audio>
 </mat-toolbar>
