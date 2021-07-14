@@ -1,5 +1,6 @@
-import { Component, ViewEncapsulation, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, AfterViewInit, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { ThemePalette } from '@angular/material/core';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'my-site';
 
   opened: boolean; 
@@ -18,8 +19,12 @@ export class AppComponent {
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
 
+  ngOnInit(){
+    
+  }
+
   ngAfterViewInit() {
-      console.log(this.musicPlayer.nativeElement);
+      console.log(this.musicPlayer.nativeElement);      
   }
 
   changed(){
