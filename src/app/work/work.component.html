@@ -5,11 +5,14 @@
     </div>
 
     <div class="work__job-positions">
-        <app-job-position></app-job-position>
-        <app-job-position></app-job-position>
-        <app-job-position></app-job-position>
-        <app-job-position></app-job-position>
-        <app-job-position></app-job-position>
-        <app-job-position></app-job-position>
+        <div *ngFor="let job of jobs">
+            <app-job-position 
+                [date]="job.date"
+                [company]="job.company"
+                [description]="job.description"
+                [title]="job.title"
+                >
+            </app-job-position>
+        </div>
     </div>
 </div>
