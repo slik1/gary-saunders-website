@@ -22,7 +22,22 @@
 
 
 <div class="projects__all">
-    <app-project></app-project>
+
+
+    <div *ngFor="let project of projects">
+        <app-project 
+            [type]="project.type"
+            [title]="project.title"
+            [description]="project.description"
+            [skills]="project.skills"
+            [link]="project.link"
+            [images]="project.images"
+            [layout]="project.layout"
+            >
+        </app-project>
+    </div>
+
+
 </div>
 
 

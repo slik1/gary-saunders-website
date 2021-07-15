@@ -1,13 +1,13 @@
-<div class="project">
+<div class="project" [ngClass]="layout">
 
     <div class="project__details">
-        <div class="project__type">Software Feature</div>
-        <div class="project__title">Centralus - Scheduling</div>
+        <div class="project__type">{{type}}</div>
+        <div class="project__title">{{title}}</div>
         <div class="project__description">
-            <p>A specialized software called Centralus needed a specialized interface for the main software functionality to set irrigation schedules. Many iterative wireframes, prototypes, and UI meetings were had to achieve a successful rollout of this much anticipated new feature. </p>
+            <p>{{description}}</p>
         </div>
-        <div class="project__skills">Angular, Angular Material, Adobe XD</div>
-        <div class="project__link">Check it out!</div>
+        <div class="project__skills">{{skills}}</div>
+        <a class="project__link" href="`{{link}}`">Check it out!</a>
     </div>
 
     <!-- <div class="project__images">
@@ -15,14 +15,10 @@
     </div> -->
 
 
-    <carousel class="project__images" [width]="536" [height]="355" [cellWidth]="536" [dots]=true [arrowsOutside]=false> 
+    <carousel class="project__images popout-border" [ngClass]="layout" [width]="536" [height]="355" [cellWidth]="536" [dots]=true [arrowsOutside]=false> 
 
-        <div class="carousel-cell">
-            <img src="../../../assets/project_centralus_scheduling.png">
-        </div>
-    
-        <div class="carousel-cell">
-            <img src="../../../assets/project_centralus_scheduling.png">
+        <div class="carousel-cell" *ngFor="let image of images">
+            <img src="{{image.src}}">
         </div>
     
     </carousel>

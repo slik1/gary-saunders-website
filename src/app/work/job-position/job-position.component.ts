@@ -14,6 +14,7 @@ export class JobPositionComponent implements OnInit {
   @Input() description: string;
   @Input() title: string;
 
+
   constructor() { }
 
   ngOnInit(): void {

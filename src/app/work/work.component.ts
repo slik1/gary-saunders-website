@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { jobsData } from '../jobs-data';
+import { jobsData } from '../jobsData';
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -7,7 +7,7 @@ import { jobsData } from '../jobs-data';
 })
 export class WorkComponent implements OnInit {
   public jobs = jobsData;
-  
+
   constructor() { }
 
   ngOnInit(): void {
