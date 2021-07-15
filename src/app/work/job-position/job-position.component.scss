@@ -1,0 +1,70 @@
+
+.job{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto minmax(32px, auto) 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+
+    .job__date{
+        width: 110px;
+        padding: 5px 0;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .job__dot-and-line{
+        position: relative;
+        display: flex;
+        width: 2px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ddd;
+        align-self: stretch;
+        justify-self: center;
+
+        .job__dot{
+            position: absolute;
+            left: auto;
+            right: auto;
+            top: 0;
+            bottom: auto;
+            z-index: 2;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--color-light-green);
+            box-shadow: 0 0 0 6px rgba(82, 255, 18, 0.2), 0 0 0 12px #fff;
+            margin-top: 12px;
+        }
+    }
+
+    .job__company-and-description{
+
+        padding-bottom: 4rem;
+
+
+
+        .job__company{
+            font-size: var(--font-size-xlarge);
+            font-weight: bold;
+        }
+
+        .job__description{
+            font-size: var(--font-size-large);
+        }
+
+        .job__title{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: var(--font-size-medium);
+            padding: 1rem 3rem;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: #ddd;
+            margin-top: 3rem;
+        }
+
+    }
+
+}

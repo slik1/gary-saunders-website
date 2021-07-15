@@ -1,8 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/vars';
 
 
+html, body { height: 100%; font-size: 62.5%;}
+body { margin: 0; font-family: 'Poppins', sans-serif; font-size: 2.0rem; color: #3b3b3b; font-weight: 300;}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Poppins', sans-serif; }
+
+a{
+    text-decoration: underline;
+    color: var(--color-light-green);
+}
+
+.section-heading{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    &:before{
+        content: "";
+        display: inline-block;
+        border: 6px solid var(--color-light-green);
+        position: absolute;
+        top: -29px;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        left: -20px;
+        z-index: -1;
+    }
+}
+
+.popout-border{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+
+    &.top-right{
+
+        &:before{
+            content: "";
+            display: inline-block;
+            border: 6px solid var(--color-light-green);
+            position: absolute;
+            top: -29px;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            right: -20px;
+            z-index: -1;
+        }
+    }
+
+    &.top-left{
+
+        &:before{
+            content: "";
+            display: inline-block;
+            border: 6px solid var(--color-light-green);
+            position: absolute;
+            top: -29px;
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            left: -20px;
+            z-index: -1;
+        }
+    }
+}
+
+.main-container .main-inner{
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    margin-bottom: 30rem;
+    .inner{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 4rem;
+    }
+}
 
 

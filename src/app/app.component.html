@@ -1,8 +1,8 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="over" [(opened)]="opened" autoFocus="false">
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" autoFocus="false" position="end">
 
 
-    <mat-nav-list>
+    <!-- <mat-nav-list>
       <a mat-list-item href="https://www.linkedin.com/in/gary-saunders-sd/" target="_blank">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -11,13 +11,9 @@
         
         <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fg-slik&color=orange_transparent&size=64" style="width: 64px; height: 64px;"></iframe>
       </a>
-    </mat-nav-list>
+    </mat-nav-list> -->
 
-    <!-- <mat-nav-list>
-  <a mat-list-item href="..." routerLink="/" routerLinkActive="active"> Home (coming soon)</a>
-  <a mat-list-item href="..." routerLink="/about" routerLinkActive="active"> About (coming soon)</a>
-  <a mat-list-item href="..." routerLink="/contact" routerLinkActive="active"> Contact (coming soon)</a>
-</mat-nav-list> -->
+
 <div class="monster" *ngIf="checked">
   <img src="../assets/monster_scroobly.gif" />
 </div>
@@ -29,34 +25,59 @@
 
   <mat-sidenav-content>
 
-    <mat-toolbar color="primary">
-      <button mat-icon-button aria-label="menu button" (click)="sidenav.toggle()">
-        <mat-icon>lunch_dining</mat-icon>
-      </button>
 
 
-      <div class="button-container">
+    <mat-toolbar>
+
+
+      
+
+      <nav>
+        <div class="logo"><img src="../assets/gs_logo.png" /></div>
+        <div class="nav__styled-links">
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Project</a>
+          <a href="#">Contact</a>
+          <button mat-stroked-button color="primary">Primary</button>
+        </div>
+        <!-- <div class="nav__mobile-menu">
+          <button mat-icon-button aria-label="menu button" (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div> -->
+      </nav>
+
+      <!-- <button mat-icon-button aria-label="menu button" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+
+
+      <!-- <div class="button-container">
         <mat-slide-toggle class="example-margin" [color]="color" [checked]="checked" [(ngModel)]="checked"
           [disabled]="disabled" (change)="changed()">
           Beast mode
         </mat-slide-toggle>
-      </div>
+      </div> -->
+
+
     </mat-toolbar>
 
 
-    <div class="container" [ngClass]="{'active': checked}">
 
-      <div class="inner">
+
+
+    <div class="main-container" [ngClass]="{'active': checked}">
+
+      <div class="main-inner">
 
         <div class="big-textbox" *ngIf="!checked">
           <h1>
-
-            <span>Hey, my name is </span>
             Gary <br>Saunders
-            <span>I like to make music, UI's, and food.</span>
           </h1>
+          <span>I'm a Front-End Developer, no wait I'm a UX/UI Designer...or something like that</span>
           
-
+<!-- 
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 200 200">
             <g fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
               stroke-miterlimit="10">
@@ -64,7 +85,7 @@
                 d="M2.682 52.074c13.744 5.461 33.286-2.781 36.734-17.97.904-3.985 2.262-11.811-2.116-14.288-9.604-5.432-14.071 19.662 1.59 16.363 6.477-1.365 11.752-7.415 15.898-12.193 4.924-5.671 9.156-11.901 14.08-17.571" />
               <path d="M72.318 13.251c-1.697-4.046.258-7.902-.576-12.016-2.6 1.869-8.045 5.422-11.414 5.542" />
             </g>
-          </svg>
+          </svg> -->
         </div>
 
         <div class="monster" *ngIf="checked">
@@ -73,36 +94,41 @@
 
 
 
-        <section id="about" wmAnimate="fadeIn" aos>
-          <!-- <app-about></app-about> -->
-          <p>jk sjdfklj dskfjkdsj fkl sdkljf kljds lkfj lskdjf kljs dklfj k lsdj fkj sdlkf jlksdj flk j sdf</p>
+        <section id="about">
+        <!-- <section id="about" wmAnimate="fadeIn" aos> -->
+          <app-about></app-about>
+          
         </section>
 
-        <section id="projects" wmAnimate="fadeIn" aos>
-          <app-projects></app-projects>
-        </section>
-        <section id="about" wmAnimate="fadeIn" aos>
-          <!-- <app-about></app-about> -->
-          <p>jk sjdfklj dskfjkdsj fkl sdkljf kljds lkfj lskdjf kljs dklfj k lsdj fkj sdlkf jlksdj flk j sdf</p>
+
+
+        <section id="work">
+          <app-work></app-work>
         </section>
 
-        <section id="projects" wmAnimate="fadeIn" aos>
-          <app-projects></app-projects>
-        </section>
-        <section id="about" wmAnimate="fadeIn" aos>
-          <!-- <app-about></app-about> -->
-          <p>jk sjdfklj dskfjkdsj fkl sdkljf kljds lkfj lskdjf kljs dklfj k lsdj fkj sdlkf jlksdj flk j sdf</p>
-        </section>
-
-        <section id="projects" wmAnimate="fadeIn" aos>
+        <!-- <section id="projects" wmAnimate="fadeIn" aos> -->
+        <section id="projects">
           <app-projects></app-projects>
         </section>
 
-       </div>
+
+        <section id="contact">
+          <app-contact></app-contact>
+        </section>
+
+
+
+      </div> <!-- End inner -->
       
 
 
       </div>
+
+
+
+
+
+
 
     <mat-toolbar class="footer" [ngClass]="{'active': checked}">
       <audio controls #musicPlayer>

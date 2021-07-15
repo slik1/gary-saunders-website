@@ -11,11 +11,19 @@ import { ProjectsComponent } from './projects/projects.component';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { AnimateModule } from '@wizdm/animate';
+import { WorkComponent } from './work/work.component';
+import { ProjectComponent } from './projects/project/project.component';
+import { JobPositionComponent } from './work/job-position/job-position.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    WorkComponent,
+    ProjectComponent,
+    JobPositionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

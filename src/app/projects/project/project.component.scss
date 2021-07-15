@@ -1,0 +1,26 @@
+.project{
+    display: grid;
+    grid-template-columns: auto minmax(auto, 536px);
+    gap: 4rem;
+    .project__details{
+
+        .project__title {
+            font-size: var(--font-size-xlarge);
+            font-weight: bold;
+        }
+
+        .project__skills {
+            margin-bottom: 3rem;
+        }
+
+        .project__link{
+            color: var(--color-light-green);
+            text-decoration: underline;
+        }
+
+    }
+    .project__images{
+        width: 536px;
+        max-width: 100%;
+    }
+}
