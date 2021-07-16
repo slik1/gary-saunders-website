@@ -4,11 +4,34 @@
     gap: 4rem;
     margin-bottom: 20rem;
 
-    &.imgLeft{
+    &.mobile{
+        max-width: 840px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &.mobile.imgLeft{
+        grid-template-columns: auto minmax(auto, 536px);
         .project__details{
             order: 2;
         }
     }
+    &.mobile.imgRight{
+        grid-template-columns: minmax(auto, 536px) auto;
+
+    }
+    &.desktop.imgLeft{
+        grid-template-columns: auto minmax(auto, 536px);
+        .project__details{
+            order: 2;
+        }
+    }
+    &.desktop.imgRight{
+        grid-template-columns: minmax(auto, 536px) auto;
+
+    }
+
+
 
     .project__details{
 
