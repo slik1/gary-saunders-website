@@ -14,7 +14,8 @@ export class ProjectComponent implements OnInit {
   @Input() link: string;
   @Input() images: Array<object>;
   @Input() layout: string;
-  
+  @Input() screenshotType: string;
+
   constructor() { }
 
   ngOnInit(): void {

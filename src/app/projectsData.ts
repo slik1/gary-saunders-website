@@ -9,7 +9,8 @@ export const projectsData = [
             { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'},
             { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'}
         ],
-        'layout': 'imgRight'
+        'layout': 'imgRight',
+        'screenshotType': 'desktop'
     },
     { 
         'type': 'Project (DESIGN)',
@@ -22,7 +23,8 @@ export const projectsData = [
             { 'src': '../../../assets/projects/cellkit/screen2.png'},
             { 'src': '../../../assets/projects/cellkit/screen3.png'},
         ],
-        'layout': 'imgLeft'
+        'layout': 'imgLeft',
+        'screenshotType': 'mobile'
     },
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
@@ -35,7 +37,8 @@ export const projectsData = [
             { 'src': '../../../assets/projects/dripcalc/screen2.png'},
             { 'src': '../../../assets/projects/dripcalc/screen3.png'},
         ],
-        'layout': 'imgRight'
+        'layout': 'imgRight',
+        'screenshotType': 'mobile'
     },
     { 
         'type': 'Throwback Project (DESIGN + DEVELOPMENT)',
@@ -47,7 +50,8 @@ export const projectsData = [
             { 'src': '../../../assets/projects/187/screen1.png'},
 
         ],
-        'layout': 'imgLeft'
+        'layout': 'imgLeft',
+        'screenshotType': 'desktop'
     },
 
 ];
