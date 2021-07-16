@@ -34,6 +34,15 @@ app-root {
           margin-left: 8rem;
           border-color: var(--color-light-green);
         }
+        @media screen and (max-width: 945px){
+          display: none;
+        }
+      }
+      .nav__mobile-menu{
+        display: none;
+        @media screen and (max-width: 945px){
+          display: block;
+        }
       }
     }
   }
