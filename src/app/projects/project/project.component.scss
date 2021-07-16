@@ -20,6 +20,7 @@
             grid-template-columns: 100%;
             .project__details{
                 order: 0;
+                margin-bottom: 8rem;
             }
         }
     }
@@ -27,6 +28,9 @@
         grid-template-columns: minmax(auto, 536px) auto;
         @media screen and (max-width: 850px){
             grid-template-columns: 100%;
+            .project__details{
+                margin-bottom: 8rem;
+            }
         }
     }
 
@@ -39,6 +43,7 @@
             grid-template-columns: 100%;
             .project__details{
                 order: 0;
+                margin-bottom: 8rem;
             }
         }
     }
@@ -46,6 +51,9 @@
         grid-template-columns: minmax(auto, 536px) auto;
         @media screen and (max-width: 1060px){
             grid-template-columns: 100%;
+            .project__details{
+                margin-bottom: 8rem;
+            }
         }
     }
 
@@ -54,6 +62,13 @@
 
     .project__details{
 
+        align-self: center;
+
+        .project__type{
+            color: var(--color-purple);
+            font-size: 18px;
+        }
+
         .project__title {
             font-size: var(--font-size-xlarge);
             font-weight: bold;
@@ -61,11 +76,19 @@
 
         .project__skills {
             margin-bottom: 3rem;
+            display: block;
         }
 
         .project__link{
             color: var(--color-light-green);
-            text-decoration: underline;
+            display: flex;
+            align-items: center;
+            span{
+                text-decoration: underline;
+            }
+            .mat-icon{
+                margin-left: 1rem;
+            }
         }
 
     }

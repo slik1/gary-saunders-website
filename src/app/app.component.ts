@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation, AfterViewInit, ElementRef, ViewChild, OnI
 import { ThemePalette } from '@angular/material/core';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +11,6 @@ import { ThemePalette } from '@angular/material/core';
 })
 export class AppComponent implements OnInit {
   title = 'my-site';
-
   opened: boolean; 
   showMonster = false;
   color: ThemePalette = 'accent';

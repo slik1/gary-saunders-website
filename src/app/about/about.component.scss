@@ -1,6 +1,6 @@
 .about__pic{
     width: 350px;
-    max-width: 100%;
+    max-width: calc(100% - 30px);
     align-self: start;
     img{
         width: 100%;

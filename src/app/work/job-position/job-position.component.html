@@ -8,8 +8,12 @@
         <div class="job__description">
             <p>{{description}}</p>
         </div>
-        <div class="job__title">
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip class="job__title" color="primary" selected>{{title}}</mat-chip>
+        </mat-chip-list>
+        
+        <!-- <div class="job__title">
             {{title}}
-        </div>
+        </div> -->
     </div>
 </div>

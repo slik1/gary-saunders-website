@@ -10,7 +10,7 @@ export class ProjectComponent implements OnInit {
   @Input() type: string;
   @Input() title: string;
   @Input() description: string;
-  @Input() skills: string;
+  @Input() skills: Array<string>;
   @Input() link: string;
   @Input() images: Array<object>;
   @Input() layout: string;
