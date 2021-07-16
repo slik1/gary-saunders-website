@@ -19,6 +19,19 @@ export class AppComponent implements OnInit {
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
 
+
+  scrollToSection(id:string){
+
+    const el: HTMLElement|null = document.getElementById(id);
+
+    if (el) {
+      setTimeout(() =>
+        el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 0);
+    }
+
+    //document.getElementById(el).scrollIntoView({ behavior: "smooth"});
+  }
+
   ngOnInit(){
     
   }
