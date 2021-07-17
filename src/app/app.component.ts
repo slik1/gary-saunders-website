@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, AfterViewInit, ElementRef, ViewChild, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
-
+import { MatIconRegistry } from "@angular/material/icon";
+import { DomSanitizer } from "@angular/platform-browser";
 
 
 @Component({
@@ -18,6 +19,22 @@ export class AppComponent implements OnInit {
   disabled = false;
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
+
+
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer){
+    this.matIconRegistry.addSvgIcon(
+      "icon_github",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-github.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      "icon_soundcloud",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-soundcloud.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      "icon_linkedin",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-linkedin.svg")
+    );
+  }
 
 
   scrollToSection(id:string){

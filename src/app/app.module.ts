@@ -15,6 +15,8 @@ import { WorkComponent } from './work/work.component';
 import { ProjectComponent } from './projects/project/project.component';
 import { JobPositionComponent } from './work/job-position/job-position.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { ContactComponent } from './contact/contact.component';
     MaterialModule,
     FormsModule,
     IvyCarouselModule,
-    AnimateModule//.init({ mode: 'scrolling' })
+    AnimateModule,//.init({ mode: 'scrolling' })
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

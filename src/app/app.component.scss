@@ -218,13 +218,32 @@ app-root {
   }
 
   .main-container {
-    
     height: calc(100% - 60px);
     width: 100%;
     transition: all 0.5s;
 
     .main-inner{
       padding-bottom: 2rem;
+    }
+
+    .social-i-guess {
+      position: fixed;
+      right: 20px;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 120px;
+      justify-content: space-between;
+      margin-bottom: 0.6rem;
+      a svg{
+        fill: var(--color-light-green);
+      }
+      @media screen and (max-width: 480px){
+        position: static;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
     }
 
     &.active {

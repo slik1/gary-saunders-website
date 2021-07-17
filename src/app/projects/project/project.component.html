@@ -23,7 +23,11 @@
     </div> -->
 
 
-    <carousel class="project__images popout-border" [ngClass]="layout" [width]="screenshotType == 'desktop' ? 536 : 260" [height]="screenshotType == 'desktop' ? 355 : 462" [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [dots]=true [arrowsOutside]=false> 
+    <!-- [width]="screenshotType == 'desktop' ? 536 : 260" -->
+    <!-- [height]="screenshotType == 'desktop' ? 355 : 462" -->
+    <!-- [cellWidth]="screenshotType == 'desktop' ? 536 : 260" -->
+
+    <carousel class="project__images popout-border" [width]="screenshotType == 'desktop' ? 536 : 260" [height]="screenshotType == 'desktop' ? 355 : 462" [ngClass]="layout"  [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1" [dots]=true [arrowsOutside]=false> 
 
         <div class="carousel-cell" *ngFor="let image of images">
             <img src="{{image.src}}">

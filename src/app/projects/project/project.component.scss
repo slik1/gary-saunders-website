@@ -4,6 +4,10 @@
     gap: 4rem;
     margin-bottom: 20rem;
 
+    @media screen and (max-width: 480px){
+        margin-bottom: 10rem;
+    }
+
     &.mobile{
         max-width: 840px;
         margin-left: auto;
@@ -64,6 +68,10 @@
 
         align-self: center;
 
+        @media screen and (max-width: 480px){
+            margin-bottom: 0 !important;
+        }
+
         .project__type{
             color: var(--color-purple);
             font-size: 18px;
@@ -91,11 +99,15 @@
             }
         }
 
+        
+
     }
     .project__images{
         width: 536px;
         max-width: 100%;
-
+        @media screen and (max-width: 600px){
+            display: none;
+        }
     }
 
     &.desktop{
