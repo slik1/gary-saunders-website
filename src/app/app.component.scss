@@ -1,7 +1,7 @@
 app-root {
   .mat-drawer-container {
     height: 100%;
-    background-color: #fff;
+    background-color: var(--color-white);
   }
 
   .mat-toolbar:not(.footer) {
@@ -10,7 +10,7 @@ app-root {
     padding: 0 20px 0 16px;
     z-index: 10001;
     // box-shadow: 0px 2px 6px rgb(0 0 0 / 5%);
-    // background-color: #fff;
+    background-color: var(--color-white);
     nav{
       width: 100%;
       display: flex;
@@ -300,8 +300,14 @@ app-root {
 .mat-stroked-button{
   &.stroked-green{
     border-color: var(--color-light-green);
+    //color: var(--color-text);
+    font-weight: bold;
+    border-width: 2px;
   }
   &.stroked-purple{
     border-color: var(--color-purple);
+    background-color: rgba(79, 52, 90, 0.2);
+    font-weight: bold;
   }
 }
+

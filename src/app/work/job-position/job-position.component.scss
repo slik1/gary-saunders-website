@@ -31,7 +31,7 @@
         width: 2px;
         flex-direction: column;
         align-items: center;
-        background-color: #ddd;
+        background-color: var(--color-light-green);
         align-self: stretch;
         justify-self: center;
         @media screen and (max-width: 550px){
@@ -49,7 +49,7 @@
             height: 10px;
             border-radius: 50%;
             background-color: var(--color-light-green);
-            box-shadow: 0 0 0 6px rgba(82, 255, 18, 0.2), 0 0 0 12px #fff;
+            box-shadow: 0 0 0 6px rgba(82, 255, 18, 0.2), 0 0 0 12px var(--color-white);
             margin-top: 12px;
         }
     }
