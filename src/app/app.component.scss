@@ -9,13 +9,15 @@ app-root {
     top: 0;
     padding: 0 20px 0 16px;
     z-index: 10001;
+    // box-shadow: 0px 2px 6px rgb(0 0 0 / 5%);
+    // background-color: #fff;
     nav{
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       .logo{
-        width: 66px;
+        width: 67px;
         display: flex;
         img{
           width: 100%;
@@ -30,9 +32,9 @@ app-root {
           text-decoration: none;
           color: var(--color-text);
         }
-        .mat-stroked-button{
+        .mat-stroked-button,
+        .mat-flat-button{
           margin-left: 8rem;
-          border-color: var(--color-light-green);
         }
         @media screen and (max-width: 945px){
           display: none;
@@ -298,5 +300,8 @@ app-root {
 .mat-stroked-button{
   &.stroked-green{
     border-color: var(--color-light-green);
+  }
+  &.stroked-purple{
+    border-color: var(--color-purple);
   }
 }

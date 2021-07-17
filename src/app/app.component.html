@@ -19,7 +19,7 @@
       <a mat-list-item href="#" (click)="scrollToSection('projects-anchor'); sidenav.toggle()">Project</a>
       <a mat-list-item href="#" (click)="scrollToSection('contact-anchor'); sidenav.toggle()">Contact</a>
       <div class="mat-list-item">
-        <button class="stroked-green" mat-stroked-button color="accent">DOWNLOAD RESUME</button>
+        <button mat-flat-button color="accent">DOWNLOAD RESUME</button>
       </div>
     </mat-nav-list>
 
@@ -38,13 +38,13 @@
     <mat-toolbar>
 
       <nav>
-        <div class="logo"><img src="../assets/gs_logo.png" /></div>
+        <div class="logo"><img src="../assets/logo_gs.svg" /></div>
         <div class="nav__styled-links">
           <a href="#" (click)="scrollToSection('about-anchor')">About</a>
           <a href="#" (click)="scrollToSection('work-anchor')">Work</a>
           <a href="#" (click)="scrollToSection('projects-anchor')">Projects</a>
           <a href="#" (click)="scrollToSection('contact-anchor')">Contact</a>
-          <button mat-stroked-button color="accent">DOWNLOAD RESUME</button>
+          <button mat-flat-button color="accent">DOWNLOAD RESUME</button>
         </div>
         <div class="nav__mobile-menu">
           <button mat-icon-button aria-label="menu button" (click)="sidenav.toggle()">
