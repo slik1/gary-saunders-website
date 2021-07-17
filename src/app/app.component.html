@@ -70,13 +70,13 @@
 
 
 
-
+    <!-- wmAnimateView top="24" -->
 
     <div class="main-container" [ngClass]="{'active': checked}">
 
       <div class="main-inner">
 
-        <div class="big-textbox" *ngIf="!checked">
+        <div class="big-textbox" wmAnimate="landing" speed="fast" aos *ngIf="!checked">
           <h1>
             Gary <br>Saunders
           </h1>
@@ -99,7 +99,7 @@
 
 
 
-        <section id="about">
+        <section id="about" wmAnimate="fadeIn" speed="fast" aos>
           <div id="about-anchor" class="scroll-to-anchor"></div>
         <!-- <section id="about" wmAnimate="fadeIn" aos> -->
           <app-about></app-about>
@@ -120,7 +120,7 @@
         </section>
 
 
-        <section id="contact">
+        <section id="contact" wmAnimate="bounceInUp" aos>
           <div id="contact-anchor" class="scroll-to-anchor"></div>
           <app-contact></app-contact>
         </section>
@@ -133,7 +133,7 @@
 
       </div> <!-- End main-inner -->
       
-      <div class="social-i-guess">
+      <div class="social-i-guess" wmAnimate="fadeIn" aos>
         <a href="path.html"><mat-icon svgIcon="icon_linkedin"></mat-icon></a>
         <a href="path.html"><mat-icon svgIcon="icon_github"></mat-icon></a>
         <a href="path.html"><mat-icon svgIcon="icon_soundcloud"></mat-icon></a>
