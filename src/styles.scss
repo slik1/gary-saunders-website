@@ -19,6 +19,16 @@ body {
 a{
     text-decoration: none;
     color: var(--color-light-green);
+    
+    &:hover{
+        //color: darken(var(--color-light-green), 20);
+        color: darken(#52FF12, 20) !important;
+        svg{
+            fill: darken(#52FF12, 20) !important;
+        
+        }
+    }
+
 }
 
 .section-heading{

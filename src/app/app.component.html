@@ -16,7 +16,7 @@
     <mat-nav-list>
       <a mat-list-item href="#" (click)="scrollToSection('about-anchor'); sidenav.toggle()">About</a>
       <a mat-list-item href="#" (click)="scrollToSection('work-anchor'); sidenav.toggle()">Work</a>
-      <a mat-list-item href="#" (click)="scrollToSection('projects-anchor'); sidenav.toggle()">Project</a>
+      <a mat-list-item href="#" (click)="scrollToSection('projects-anchor'); sidenav.toggle()">Projects</a>
       <a mat-list-item href="#" (click)="scrollToSection('contact-anchor'); sidenav.toggle()">Contact</a>
       <div class="mat-list-item">
         <a target="_blank" href="http://www.garysaunders.com/pdf/resume-2021.pdf" mat-stroked-button class="stroked-green" color="accent">DOWNLOAD RESUME</a>
@@ -37,7 +37,7 @@
 
     <mat-toolbar>
 
-      <nav>
+      <nav wmAnimate="fadeInDown" speed="medium" aos>
         <a class="logo" href="#" (click)="scrollToSection('landing')"><img src="../assets/logo_gs.svg" /></a>
         <div class="nav__styled-links">
           <a href="#" (click)="scrollToSection('about-anchor')">About</a>
@@ -72,15 +72,15 @@
 
     <!-- wmAnimateView top="24" -->
     <div id="landing"></div>
-    <div class="main-container" [ngClass]="{'active': checked}">
+    <div class="main-container" [ngClass]="{'active': checked}" wmAnimateView top="20vh">
       
       <div class="main-inner">
 
-        <div class="big-textbox" wmAnimate="landing" speed="fast" aos *ngIf="!checked">
+        <div class="big-textbox" [wmAnimate]="isMobile ? 'bounceIn' : 'landing'" speed="fast" aos *ngIf="!checked">
           <h1>
-            Gary <br>Saunders
+            Gary <br>Saunders<span *ngIf="isMobile == true">!!</span>
           </h1>
-          <span>I'm a Front-End Developer, no wait I'm a UX/UI Designer...or something like that</span>
+          <span>I'm a Front-End Developer who seems to be doing more designing than coding lately...also I couldn't live without music.</span>
           
           <!-- 
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 200 200">
@@ -99,7 +99,7 @@
 
 
 
-        <section id="about" wmAnimate="fadeIn" speed="fast" aos>
+        <section id="about" wmAnimate="fadeIn" speed="fast" aos=0.2>
           <div id="about-anchor" class="scroll-to-anchor"></div>
         <!-- <section id="about" wmAnimate="fadeIn" aos> -->
           <app-about></app-about>
@@ -120,7 +120,7 @@
         </section>
 
 
-        <section id="contact" wmAnimate="bounceInUp" aos>
+        <section id="contact" wmAnimate="bounceInUp" aos=0.1 once>
           <div id="contact-anchor" class="scroll-to-anchor"></div>
           <app-contact></app-contact>
         </section>
@@ -133,10 +133,10 @@
 
       </div> <!-- End main-inner -->
       
-      <div class="social-i-guess" wmAnimate="fadeIn" aos>
-        <a href="path.html"><mat-icon svgIcon="icon_linkedin"></mat-icon></a>
-        <a href="path.html"><mat-icon svgIcon="icon_github"></mat-icon></a>
-        <a href="path.html"><mat-icon svgIcon="icon_soundcloud"></mat-icon></a>
+      <div class="social-i-guess">
+        <a [wmAnimate]="isMobile ? 'bounceIn' : 'fadeInLeft'" speed="slow" aos=0.1 target="_blank" href="https://www.linkedin.com/in/gary-saunders-sd/"><mat-icon svgIcon="icon_linkedin"></mat-icon></a>
+        <a [wmAnimate]="isMobile ? 'bounceIn' : 'fadeInLeft'" speed="slow" aos=0.1 target="_blank" href="https://github.com/slik1"><mat-icon svgIcon="icon_github"></mat-icon></a>
+        <a [wmAnimate]="isMobile ? 'bounceIn' : 'fadeInLeft'" speed="slow" aos=0.1 target="_blank" href="https://soundcloud.com/g-slik"><mat-icon svgIcon="icon_soundcloud"></mat-icon></a>
       </div>
 
     </div>

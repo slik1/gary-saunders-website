@@ -1,4 +1,4 @@
-<div class="project" [ngClass]="[layout, screenshotType]" wmAnimate="fadeIn" speed="faster" aos>
+<div class="project" [ngClass]="[layout, screenshotType]" wmAnimate="fadeIn" speed="faster" aos=0.1>
 
     <div class="project__details">
         <div class="project__type">{{type}}</div>
@@ -14,8 +14,8 @@
         
 
 
-
-        <a class="project__link" [href]="link"><span>Check it out!</span><mat-icon>launch</mat-icon></a>
+        <p *ngIf="link === 'unreleased'" class="project__link">(Not launched yet!)</p>
+        <a *ngIf="link !== 'unreleased'" class="project__link" [href]="link" target="_blank"><span>Check it out!</span><mat-icon>launch</mat-icon></a>
     </div>
 
     <!-- <div class="project__images">
