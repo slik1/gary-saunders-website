@@ -2,13 +2,13 @@ export const jobsData = [
     { 
         'date': '2019-Now',
         'company': 'Hunter Industries',
-        'description': 'Took on more of a design role advancing our UX/UI efforts while working with cross-functional teams to plan, design, prototype, and implement new software features.',
+        'description': 'Took on more of a design role in the software department advancing our UX/UI efforts while working with cross-functional teams to plan, design, prototype, and implement new software features.',
         'title': 'Front-End Developer'
     },
     { 
         'date': '2015-2019',
         'company': 'Hunter Industries',
-        'description': 'Main web developer working closing with UX/UI designer to implement design mockups for new websites, themes and features in a Drupal multisite codebase.',
+        'description': 'Main web developer in the marketing department working closing with UX/UI designer to implement design mockups for new websites, themes and features in a Drupal multisite codebase.',
         'title': 'Web Developer'
     },
     { 
@@ -20,7 +20,7 @@ export const jobsData = [
     { 
         'date': '2011-2012',
         'company': 'Alli Sports (NBC Sports)',
-        'description': 'Performed front-end updates and maintenance on a custom enterprise-level MVC website. Worked with a bunch of really cool dudes and even had a couple of my self-produced beats used in commercials that aired nationally during the RedBull Signature Series and Dew Tour events.',
+        'description': 'Performed front-end updates and maintenance on a custom enterprise-level MVC website. Worked with cool people and even had a couple of my self-produced beats used in commercials that aired nationally during the RedBull Signature Series and Dew Tour events.',
         'title': 'Manager of Digital Technology + Operations'
     },
     { 

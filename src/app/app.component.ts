@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation, AfterViewInit, ElementRef, ViewChild, OnI
 import { ThemePalette } from '@angular/material/core';
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
-
+import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +17,12 @@ export class AppComponent implements OnInit {
   color: ThemePalette = 'accent';
   checked = false;
   disabled = false;
+  isMobile:boolean = false;
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
 
 
-  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer){
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, public breakpointObserver: BreakpointObserver){
     this.matIconRegistry.addSvgIcon(
       "icon_github",
       this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-github.svg")
@@ -49,8 +50,11 @@ export class AppComponent implements OnInit {
     //document.getElementById(el).scrollIntoView({ behavior: "smooth"});
   }
 
-  ngOnInit(){
-    
+  ngOnInit(): void {
+    if (this.breakpointObserver.isMatched('(max-width: 480px)')) {
+      this.isMobile = true;
+      console.log('MOBILE!!!!!');
+    }
   }
 
   ngAfterViewInit() {

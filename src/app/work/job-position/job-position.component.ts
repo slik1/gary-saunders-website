@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
 
 
 
@@ -13,12 +14,17 @@ export class JobPositionComponent implements OnInit {
   @Input() company: string;
   @Input() description: string;
   @Input() title: string;
+  
+  isMobile:boolean = false;
 
 
-
-  constructor() { }
+  constructor(public breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    if (this.breakpointObserver.isMatched('(max-width: 480px)')) {
+      this.isMobile = true;
+      console.log('yup mobile');
+    }
   }
 
 }
