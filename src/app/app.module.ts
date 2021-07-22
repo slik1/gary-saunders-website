@@ -16,6 +16,8 @@ import { ProjectComponent } from './projects/project/project.component';
 import { JobPositionComponent } from './work/job-position/job-position.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PraisesComponent } from './praises/praises.component';
+import { PraiseComponent } from './praises/praise/praise.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     WorkComponent,
     ProjectComponent,
     JobPositionComponent,
-    ContactComponent
+    ContactComponent,
+    PraisesComponent,
+    PraiseComponent
   ],
   imports: [
     BrowserModule,
