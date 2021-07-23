@@ -23,7 +23,9 @@ app-root {
       justify-content: space-between;
       .logo{
         width: 67px;
+        min-width: 67px;
         display: flex;
+        margin-right: 10rem;
         img{
           width: 100%;
           max-width: 100%;
@@ -32,15 +34,18 @@ app-root {
       .nav__styled-links{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1100px;
         a{
-          margin-left: 8rem;
+          // margin-left: 8rem;
           text-decoration: none;
           color: var(--color-text);
         }
-        .mat-stroked-button,
-        .mat-flat-button{
-          margin-left: 8rem;
-        }
+        // .mat-stroked-button,
+        // .mat-flat-button{
+        //   margin-left: 8rem;
+        // }
         @media screen and (max-width: 945px){
           display: none;
         }
@@ -122,7 +127,7 @@ app-root {
   }
 
   .button-container {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-transform: uppercase;
   }
 
@@ -136,29 +141,47 @@ app-root {
     max-width: 480px;
     margin: 0 auto 30px;
 
+    @media screen and (max-width: 690px){
+
+    }
+
     svg {
       position: absolute;
       right: 4vw;
       top: 50px;
     }
 
-    span{
-      @media screen and (max-width: 690px){
-        max-width: 320px;
-        font-size: 16px;
+
+    
+      span {
+        font-size: var(--font-size-lg);
+        @media screen and (max-width: 690px){
+          font-size: 1rem;
+          max-width: 330px;
+        }
+        @media screen and (max-width: 480px){
+          max-width: 340px; 
+        }
       }
-    }
+    
+
+    // span{
+    //   @media screen and (max-width: 690px){
+    //     max-width: 320px;
+    //     font-size: 16px;
+    //   }
+    // }
   }
 
   .mat-sidenav .monster {
     height: auto;
   }
 
-  .main-inner h1 {
-    //font-size: 6vw;
-    //clamp(MIN, VAL, MAX)
-    // font-size: clamp(40px, 6vw, 90px);
-    font-size: 90px;
+  .main-inner{
+
+    .big-textbox{
+      h1{
+        font-size: var(--font-size-landing);
     margin: 1rem 0;
     font-weight: 900;
     text-transform: uppercase;
@@ -170,6 +193,15 @@ app-root {
     position: relative;
     display: inline-block;
     z-index: 2;
+
+    @media screen and (max-width: 690px){
+      font-size: var(--font-size-xl);
+    }
+
+    @media screen and (max-width: 480px){
+      font-size: 3.052rem;
+      margin-right: -3rem;
+    }
 
       &:before{
           content: "";
@@ -186,24 +218,19 @@ app-root {
             top: -40px;
             left: -40px;
           }
-          @media screen and (max-width: 420px){
-            top: -53px;
-            left: -26px;
-            width: 93%;
-            height: 93%;
-          }
+
       }
   
 
-    @media screen and (max-width: 690px){
-      font-size: 6rem;
-      // font-size: clamp(50px, 11vw, 90px);
-    }
-    @media screen and (max-width: 420px){
-      font-size: 5.4rem;
-      margin-right: -40px;
-      // font-size: clamp(50px, 11vw, 90px);
-    }
+    // @media screen and (max-width: 690px){
+    //   font-size: 6rem;
+    //   // font-size: clamp(50px, 11vw, 90px);
+    // }
+    // @media screen and (max-width: 420px){
+    //   font-size: 5.4rem;
+    //   margin-right: -40px;
+    //   // font-size: clamp(50px, 11vw, 90px);
+    // }
 
 
 
@@ -229,7 +256,13 @@ app-root {
         }
       }
     }
+      }
+    }
+
+
   }
+
+
 
   .main-container {
     height: calc(100% - 60px);

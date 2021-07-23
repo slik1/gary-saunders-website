@@ -11,7 +11,6 @@ export const projectsData = [
         'link': 'https://centralus.hunterindustries.com/',
         'images': [
             { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'},
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'}
         ],
         'layout': 'imgRight',
         'screenshotType': 'desktop'

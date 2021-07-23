@@ -1,0 +1,17 @@
+.praises__text{
+    position: sticky;
+    top: 100px;
+    grid-row-start: span 1;
+    align-self: start;
+    @media screen and (max-width: 850px){
+        position: static;
+        top: auto;
+    }
+}
+
+.praises__praise{
+    padding-top: 7rem;
+    @media screen and (max-width: 850px){
+        padding-top: 0;
+    }
+}

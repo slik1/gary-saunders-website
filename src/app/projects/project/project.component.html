@@ -2,7 +2,7 @@
 
     <div class="project__details">
         <div class="project__type">{{type}}</div>
-        <div class="project__title">{{title}}</div>
+        <h3 class="project__title">{{title}}</h3>
         <div class="project__description">
             <p>{{description}}</p>
         </div>
@@ -27,7 +27,7 @@
     <!-- [height]="screenshotType == 'desktop' ? 355 : 462" -->
     <!-- [cellWidth]="screenshotType == 'desktop' ? 536 : 260" -->
 
-    <carousel class="project__images popout-border" [width]="screenshotType == 'desktop' ? 536 : 260" [height]="screenshotType == 'desktop' ? 355 : 462" [ngClass]="layout"  [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1" [dots]=true [arrowsOutside]=false> 
+    <carousel [dots]="images.length > 1 ? true : false" [arrows]="images.length > 1 ? true : false" class="project__images popout-border" [width]="screenshotType == 'desktop' ? 536 : 260" [height]="screenshotType == 'desktop' ? 355 : 462" [ngClass]="layout"  [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1" [arrowsOutside]=false> 
 
         <div class="carousel-cell" *ngFor="let image of images">
             <img src="{{image.src}}">

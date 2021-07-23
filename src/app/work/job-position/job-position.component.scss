@@ -18,7 +18,7 @@
         width: 110px;
         padding: 5px 0;
         text-align: right;
-        font-size: 16px;
+        
         @media screen and (max-width: 550px){
             grid-area: Date-Mobile;
             text-align: left;
@@ -61,22 +61,22 @@
 
 
         .job__company{
-            font-size: var(--font-size-xlarge);
+            margin: 0;
             font-weight: bold;
-            line-height: 1.3;
+            line-height: 1.2;
         }
 
         .job__description{
-            font-size: var(--font-size-large);
+          
             @media screen and (max-width: 550px){
-                font-size: var(--font-size-large);
+                
                 p{
                     margin-top: 1rem;
                     margin-bottom: 3rem;
                 }
             }
             @media screen and (max-width: 480px){
-                font-size: var(--font-size-medium);
+                font-size: var(--font-size-md);
             }
         }
 
@@ -91,7 +91,7 @@
             // border-radius: 20px;
             // background-color: #ddd;
             margin-top: 2rem;
-            font-size: 1.5rem;
+            
             height: auto;
             line-height: 1.1;
         }

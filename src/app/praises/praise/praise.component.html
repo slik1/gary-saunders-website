@@ -1,4 +1,23 @@
-<p>praise works!</p>
-<div class="praise-container">
-    <div>{{content}}</div>
+<div class="praise__content-container" [ngClass]="position">
+    <p class="praise__quote">{{content}}</p>
+    <div class="praise__type">
+        <ng-container *ngIf="type == 'email'">
+            <mat-icon>email</mat-icon>
+            <small>Email excerpt</small>
+        </ng-container>
+        <ng-container *ngIf="type == 'teams'">
+            <mat-icon svgIcon="icon_teams"></mat-icon>
+            <small>Teams message</small>
+        </ng-container>
+        <ng-container *ngIf="type == 'appStore'">
+            <mat-icon svgIcon="icon_app_store"></mat-icon>
+            <small>App Store Review</small>
+        </ng-container>
+
+        
+    </div>
+</div>
+<div class="praise__person-container" [ngClass]="position">
+    <h4 class="praise__person">{{person}}</h4>
+    <div class="praise__person-title">{{personTitle}}</div>
 </div>

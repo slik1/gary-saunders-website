@@ -35,6 +35,14 @@ export class AppComponent implements OnInit {
       "icon_linkedin",
       this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-linkedin.svg")
     );
+    this.matIconRegistry.addSvgIcon(
+      "icon_teams",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-teams.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      "icon_app_store",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-app-store.svg")
+    );
   }
 
 
@@ -51,7 +59,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.breakpointObserver.isMatched('(max-width: 480px)')) {
+    if (this.breakpointObserver.isMatched('(max-width: 850px)')) {
       this.isMobile = true;
       console.log('MOBILE!!!!!');
     }

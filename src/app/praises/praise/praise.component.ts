@@ -7,8 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PraiseComponent implements OnInit {
 
+  @Input() title: string;
   @Input() content: string;
-  
+  @Input() type: string;
+  @Input() person: string;
+  @Input() personTitle: string;
+  @Input() position: string;
+
   constructor() { }
 
   ngOnInit(): void {

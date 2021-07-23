@@ -1,2 +1,21 @@
-<p>praises works!</p>
-<app-praise></app-praise>
+<div class="inner">
+    <div class="praises__text" wmAnimate="fadeIn" speed="fast" aos>
+        <h2 class="section-heading">Some Praises</h2>
+        <p>I am but a humble man, but here are some recent praises from colleagues and end users that I have received as a direct result of my UX/UI design and development efforts.</p>
+    </div>
+
+    <div class="praises__praise">
+        <ng-container *ngFor="let praise of praises">
+            <app-praise 
+                [title]="praise.title"
+                [content]="praise.content"
+                [type]="praise.type"
+                [person]="praise.person"
+                [personTitle]="praise.personTitle"
+                [position]="praise.position"
+                
+                >
+            </app-praise>
+        </ng-container>
+    </div>
+</div>

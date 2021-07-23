@@ -1,0 +1,72 @@
+.praise__content-container{
+    background: var(--color-purple);
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+
+        border-width: 10px 17.3px 10px 0;
+        border-color: transparent var(--color-purple) transparent transparent;
+
+
+    }
+    &.left{
+        .praise__type{
+            justify-content: flex-end;
+        }
+        &:before{
+            border-width: 10px 0 10px 17.3px;
+            border-color: transparent transparent transparent var(--color-purple);
+            left: 0;
+        }
+    }
+
+    .praise__type{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        font-style: italic;
+        justify-content: flex-start;
+        :first-child{
+            margin-right: 10px;
+        }
+    }
+    .praise__quote{
+        margin-top: 0;
+    }
+}
+
+.praise__person-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    &.right{
+        align-items: flex-end;
+    }
+    .praise__person{
+        font-weight: bold;
+        margin: 0;
+        line-height: 1.3;
+    }
+    margin-bottom: 10rem;
+    // &:last-child{
+    //     margin-bottom: 0;
+    // }
+}
+
+
+:host:last-of-type{
+    .praise__person-container{
+        margin-bottom: 0;
+    }
+}

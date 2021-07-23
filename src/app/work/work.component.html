@@ -5,7 +5,7 @@
     </div>
 
     <div class="work__job-positions">
-        <div *ngFor="let job of jobs">
+        <ng-container *ngFor="let job of jobs">
             <app-job-position 
                 [date]="job.date"
                 [company]="job.company"
@@ -13,6 +13,6 @@
                 [title]="job.title"
                 >
             </app-job-position>
-        </div>
+        </ng-container>
     </div>
 </div>

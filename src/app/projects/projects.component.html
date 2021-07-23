@@ -24,7 +24,7 @@
 <div class="projects__all">
 
 
-    <div *ngFor="let project of projects">
+    <ng-container *ngFor="let project of projects">
         <app-project 
             [type]="project.type"
             [title]="project.title"
@@ -36,7 +36,7 @@
             [screenshotType]="project.screenshotType"
             >
         </app-project>
-    </div>
+    </ng-container>
 
 
 </div>
