@@ -26,6 +26,11 @@ app-root {
         min-width: 67px;
         display: flex;
         margin-right: 10rem;
+        svg{
+          #border-effect{
+            transition: all .5s;
+          }
+        }
         &:hover{
           svg{
             #border-effect{
