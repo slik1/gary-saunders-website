@@ -1,4 +1,4 @@
-<div class="praise__content-container" [ngClass]="position">
+<div class="praise__content-container" [ngClass]="position" wmAnimate="fadeIn" speed="" aos=0.1>
     <p class="praise__quote">{{content}}</p>
     <div class="praise__type">
         <ng-container *ngIf="type == 'email'">
@@ -17,7 +17,7 @@
         
     </div>
 </div>
-<div class="praise__person-container" [ngClass]="position">
+<div class="praise__person-container" [ngClass]="position" wmAnimate="fadeIn" speed="fast" aos=0.1>
     <h4 class="praise__person">{{person}}</h4>
     <div class="praise__person-title">{{personTitle}}</div>
 </div>

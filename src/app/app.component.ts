@@ -66,7 +66,8 @@ export class AppComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-      console.log(this.musicPlayer.nativeElement);      
+      console.log(this.musicPlayer.nativeElement);     
+      console.log('this is in ngAfterViewInit()!...............') 
   }
 
   changed(){

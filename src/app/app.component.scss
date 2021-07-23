@@ -21,11 +21,18 @@ app-root {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .logo{
+      #logo{
         width: 67px;
         min-width: 67px;
         display: flex;
         margin-right: 10rem;
+        &:hover{
+          svg{
+            #border-effect{
+              stroke: darken(#52ff12, 20) !important
+            }
+          }
+        }
         img{
           width: 100%;
           max-width: 100%;
@@ -160,8 +167,9 @@ app-root {
           max-width: 330px;
         }
         @media screen and (max-width: 480px){
-          max-width: 340px; 
+          max-width: 280px; 
         }
+
       }
     
 
@@ -199,8 +207,8 @@ app-root {
     }
 
     @media screen and (max-width: 480px){
-      font-size: 3.052rem;
-      margin-right: -3rem;
+      font-size: 3.352rem;
+      margin-right: -1rem;
     }
 
       &:before{
@@ -216,7 +224,7 @@ app-root {
           z-index: -1;
           @media screen and (max-width: 690px){
             top: -40px;
-            left: -40px;
+            left: -30px;
           }
 
       }

@@ -40,7 +40,8 @@ export const projectsData = [
         'skills': [
             "Vue.js",
             "Cordova",
-            "Framework7"
+            "Framework7",
+            "Sketch"
         ],
         'link': 'https://play.google.com/store/apps/details?id=com.hunter.dripcalculator&hl=en_US&gl=US',
         'images': [
