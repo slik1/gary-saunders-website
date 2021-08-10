@@ -11,14 +11,15 @@ export const projectsData = [
         'link': 'https://centralus.hunterindustries.com/',
         'images': [
             { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'},
+            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling_2.png'},
         ],
         'layout': 'imgRight',
-        'screenshotType': 'desktop'
+        'screenshotType': 'mobile'
     },
     { 
         'type': 'Project (DESIGN)',
         'title': 'Hunter Cellkit Mobile App',
-        'description': 'Worked with another vendor Digi to customize their Digi XBee Xamarin mobile app interface for a modified version needed to work with our central irrigation software Centralus. This was also to bring the design more in line with the Hunter branding and similar apps in the Hunter family.',
+        'description': 'Worked with another vendor Digi to customize their Digi XBee Xamarin mobile app interface for a modified version needed to work with our IOT central irrigation software. This was also to bring the design more in line with the Hunter branding and similar apps in the Hunter family.',
         'skills': [
             "Adobe XD",
             "Xamarin",
@@ -36,7 +37,7 @@ export const projectsData = [
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
         'title': 'Hunter Dripline Calculator Mobile App',
-        'description': 'Designed and built a hybrid mobile app using Vue.js and Cordova (PhoneGap). This was a utility app for users to input specifications for a drip irrigation project and have the app recommended products, calculate zone totalizer and/or calculate a tailored run time duration based on the user input.',
+        'description': 'Designed and built a hybrid mobile app using Vue.js and Cordova (PhoneGap). This was a utility app for users to input specifications for a drip irrigation project and have the app recommend products, calculate zone totals and/or calculate a tailored run time duration.',
         'skills': [
             "Vue.js",
             "Cordova",
@@ -55,7 +56,7 @@ export const projectsData = [
     { 
         'type': 'Throwback Project (DESIGN + DEVELOPMENT)',
         'title': '187 Killer Pads Customizer',
-        'description': 'A super fun side project I did a few years ago for a good friend. Users choose colors and some other options for each section of a skateboarding kneepad and at the end the user can click add to cart and purchase their creation.',
+        'description': 'A super fun side project I did a few years ago for a good friend. Users choose colors along with other options for each section of a skateboarding kneepad and at the end the user can click a button to purchase their creation.',
         'skills': [
             "Sketch",
             "HTML/CSS/JS"

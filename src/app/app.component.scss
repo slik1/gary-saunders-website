@@ -26,6 +26,10 @@ app-root {
         min-width: 67px;
         display: flex;
         margin-right: 10rem;
+        @media screen and (max-width: 600px){
+          width: 54px;
+          min-width: 54px;
+        }
         svg{
           #border-effect{
             transition: all .5s;
@@ -52,7 +56,7 @@ app-root {
         a{
           // margin-left: 8rem;
           text-decoration: none;
-          color: var(--color-text);
+          color: var(--color-purple);
         }
         // .mat-stroked-button,
         // .mat-flat-button{
@@ -297,7 +301,7 @@ app-root {
       justify-content: space-between;
       margin-bottom: 0.6rem;
       a svg{
-        fill: var(--color-light-green);
+        fill: var(--color-purple);
       }
       @media screen and (max-width: 480px){
         position: static;

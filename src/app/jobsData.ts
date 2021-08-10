@@ -20,7 +20,7 @@ export const jobsData = [
     { 
         'date': '2011-2012',
         'company': 'Alli Sports (NBC Sports)',
-        'description': 'Performed front-end updates and maintenance on a custom enterprise-level MVC website. Worked with cool people and even had a couple of my self-produced beats used in commercials that aired nationally during the RedBull Signature Series and Dew Tour events.',
+        'description': 'Performed front-end updates and maintenance on a custom enterprise-level MVC website. Cool people and cool happenings as I had a couple of my self-produced beats used in commercials that aired nationally during the RedBull Signature Series and Dew Tour events.',
         'title': 'Manager of Digital Technology + Operations'
     },
     { 
