@@ -10,15 +10,6 @@
         <a target="_blank" href="http://www.garysaunders.com/pdf/resume-2021.pdf" mat-stroked-button class="stroked-green" color="accent">DOWNLOAD RESUME</a>
       </div>
     </mat-nav-list>
-
-
-<div class="monster" *ngIf="checked">
-  <img src="../assets/monster_scroobly.gif" />
-</div>
-
-
-
-
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -69,9 +60,7 @@
           <span>I'm a Front-End Developer who seems to be doing more designing than coding lately...also I couldn't live without music.</span>
         </div>
 
-        <div class="monster" *ngIf="checked">
-          <img src="../assets/monster_scroobly.gif" />
-        </div>
+
 
 
 
@@ -114,8 +103,26 @@
         </div>
 
 
+
+
       </div> <!-- End main-inner -->
       
+
+
+
+      <div id="beast-mode-toggle" wmAnimate="fadeInRight" aos=0.1 once speed="slow">
+        <mat-slide-toggle
+        class="monster-mode-toggle"
+        [color]="color"
+        [checked]="checked"
+        [(ngModel)]="checked"
+        (change)="changed()"
+        [disabled]="disabled">
+          Beast mode
+        </mat-slide-toggle>
+
+      </div> 
+
       <div class="social-i-guess">
         <a [wmAnimate]="isMobile ? 'bounceIn' : 'fadeInLeft'" speed="slow" aos=0.1 target="_blank" href="https://www.linkedin.com/in/gary-saunders-sd/"><mat-icon svgIcon="icon_linkedin"></mat-icon></a>
         <a [wmAnimate]="isMobile ? 'bounceIn' : 'fadeInLeft'" speed="slow" aos=0.1 target="_blank" href="https://github.com/slik1"><mat-icon svgIcon="icon_github"></mat-icon></a>
@@ -131,12 +138,19 @@
 
 
     <mat-toolbar class="footer" [ngClass]="{'active': checked}">
+      <div class="monster" *ngIf="checked">
+        <img src="../assets/monster_scroobly.gif" />
+      </div>
       <audio controls #musicPlayer>
         <source src="../assets/ok11.mp3" type="audio/mpeg">
       </audio>
       <p>All music created by Gary Saunders &copy; 2021</p>
-      <!-- <p>&copy; 2021</p> -->
     </mat-toolbar>
+
+
+
+
+
 
   </mat-sidenav-content>
 
