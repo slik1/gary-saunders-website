@@ -26,10 +26,16 @@ h2 {
 
 h3 {
   font-size: 1.953rem; //31.25px
+  @media screen and (max-width: 600px) {
+    font-size: 1.6rem;
+  }
 }
 
 h4 {
   font-size: 1.563rem; //25px
+  @media screen and (max-width: 600px) {
+    font-size: 1.2rem;
+  }
 }
 
 h5 {

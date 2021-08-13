@@ -12,7 +12,7 @@ export class ProjectComponent implements OnInit {
   @Input() description: string;
   @Input() skills: Array<string>;
   @Input() link: string;
-  @Input() images: Array<object>;
+  @Input() images: Array<any>;
   @Input() layout: string;
   @Input() screenshotType: string;
 

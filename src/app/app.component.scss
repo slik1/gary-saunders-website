@@ -81,7 +81,7 @@ app-root {
     display: flex;
     align-items: center;
     position: absolute;
-    top: -100px;
+    top: -93px;
     left: 0px;
   }
 
@@ -338,9 +338,17 @@ app-root {
 #beast-mode-toggle{
   position: fixed;
   top: calc(50% - 30px);
-  left: -40px;
+  // left: -40px;
   z-index: 20001;
-
+  left: 10px;
+  @media  screen and (max-width: 945px) {
+    top: 20px;
+    left: auto;
+    right: 70px;
+  }
+  @media  screen and (max-width: 600px) {
+    top: 15px;
+  }
 }
 
 .monster-mode-toggle{

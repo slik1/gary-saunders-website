@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   checked = false;
   disabled = false;
   isMobile:boolean = false;
+  currentYear = new Date().getFullYear();
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
 
