@@ -108,6 +108,9 @@ app-root {
     align-items: center;
     justify-content: center;
     height: 90px;
+    @media screen and (max-width: 350px) {
+      height: 70px;
+    }
   }
 
   mat-sidenav {
@@ -417,3 +420,11 @@ margin-left: 2rem;
   }
 }
 
+mat-sidenav button.mat-icon-button {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  .mat-icon{
+    margin: 0;
+  }
+}

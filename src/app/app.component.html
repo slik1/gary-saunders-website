@@ -1,5 +1,8 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="over" [(opened)]="opened" autoFocus="false" position="end">
+    <button mat-icon-button aria-label="close" (click)="opened = !opened">
+      <mat-icon>close</mat-icon>
+    </button>
     <mat-nav-list>
       <a mat-list-item href="#" (click)="scrollToSection('about-anchor'); sidenav.toggle()">About</a>
       <a mat-list-item href="#" (click)="scrollToSection('work-anchor'); sidenav.toggle()">Work</a>
