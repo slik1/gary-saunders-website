@@ -192,17 +192,18 @@
         display: block;
         border-radius: 10px;
         padding: 6rem;
-        margin-bottom: 10rem;
+        margin-bottom: 4rem;
         @media screen and (max-width: 1000px) {
             padding: 4rem 5rem 4rem 4rem;
         }
         @media screen and (max-width: 600px) {
             padding: 2rem;
+            margin-bottom: 2rem;
         }
         @media screen and (max-width: 420px) {
-            padding: 0;
+            padding: 1.5rem;
             border: none;
-            background: none;
+            
         }
 }
 

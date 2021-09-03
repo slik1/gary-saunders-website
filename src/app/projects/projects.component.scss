@@ -4,11 +4,8 @@
 }
 
 .projects__all{
-    margin-top: 10rem;
-    @media screen and (max-width: 850px){
-        margin-top: 6rem;
-    }
+    margin-top: 3rem;
     @media screen and (max-width: 480px){
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 }

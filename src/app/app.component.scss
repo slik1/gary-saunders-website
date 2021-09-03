@@ -336,26 +336,34 @@ app-root {
 }
 
 #beast-mode-toggle{
-  position: fixed;
-  top: calc(50% - 30px);
+margin-left: 2rem;
   // left: -40px;
   z-index: 20001;
-  left: 10px;
+  
+  background-color: var(--color-light-green);
+  color: var(--color-purple);
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media  screen and (max-width: 945px) {
-    top: 20px;
-    left: auto;
-    right: 70px;
+    margin-left: auto;
+    margin-right: 1rem;
   }
   @media  screen and (max-width: 600px) {
-    top: 15px;
+    
   }
+
+  .monster-mode-toggle{
+    font-size: 13px;
+    .mat-slide-toggle-content{
+      display: flex;
+    }
+  }
+  
 }
 
-.monster-mode-toggle{
-  transform: rotate(-90deg);
-  font-size: 13px;
-
-}
 
   //Music player
   .mat-toolbar.footer {

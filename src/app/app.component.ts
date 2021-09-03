@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
   disabled = false;
   isMobile:boolean = false;
   currentYear = new Date().getFullYear();
+  secretCount = 0;
+  showSecret: boolean = false;
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
 
@@ -57,6 +59,13 @@ export class AppComponent implements OnInit {
     }
 
     //document.getElementById(el).scrollIntoView({ behavior: "smooth"});
+  }
+
+  secretCode($event){
+    this.secretCount += 1;
+    if(this.secretCount == 5){
+      this.showSecret = true;
+    }
   }
 
   ngOnInit(): void {
