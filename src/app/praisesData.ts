@@ -1,11 +1,19 @@
 export const praisesData = [
     {
         'title': '',
+        'content':'"Gary Saunders is responsible for most all of the User Interface (UI) that amazes our Centralus customers every day. Gary regularly makes our job of developing the Centralus application so much easier. He works side by side with us daily to deliver a functional application with an aesthetically pleasing look and feel. Gary is approachable and available whenever we have questions or require assistance. I appreciate Gary\'s craftmanship and attention to detail that results in the fantastic fit and finish we see in Centralus. Thanks Gary!"',
+        'type':'recognition',
+        'person': 'Aaron',
+        'personTitle': 'Senior Software Engineer',
+        'position': 'left'
+    },
+    {
+        'title': '',
         'content':'"Gotta say, it’s pretty exciting to download your changes and see how much better the app looks. Cool!"',
         'type':'email',
         'person': 'Colin',
         'personTitle': 'Principle Software Engineer',
-        'position': 'left'
+        'position': 'right'
     },
     {
         'title': '',
@@ -13,7 +21,7 @@ export const praisesData = [
         'type':'teams',
         'person': 'MobPilot1',
         'personTitle': 'Software Engineering Mob',
-        'position': 'right'
+        'position': 'left'
     },
     {
         'title': '',
@@ -21,7 +29,7 @@ export const praisesData = [
         'type':'email',
         'person': 'Dave',
         'personTitle': 'Senior Product Manager, Electronics',
-        'position': 'left'
+        'position': 'right'
     },
     {
         'title': 'Complete Drip Calculator',
@@ -29,7 +37,7 @@ export const praisesData = [
         'type':'appStore',
         'person': 'Rockn\' All\' The\' Time',
         'personTitle': 'iOS App Store User',
-        'position': 'right'
+        'position': 'left'
     },
     {
         'title': '',
@@ -37,6 +45,6 @@ export const praisesData = [
         'type':'teams',
         'person': 'Andy',
         'personTitle': 'Senior Software Engineer',
-        'position': 'left'
+        'position': 'right'
     },
 ]
