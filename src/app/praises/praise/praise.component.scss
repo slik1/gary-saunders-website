@@ -5,6 +5,10 @@
     border-radius: 10px;
     margin-bottom: 10px;
     position: relative;
+    @media screen and (max-width: 480px) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     &:before{
         content: '';
         display: inline-block;
@@ -61,6 +65,10 @@
     margin-bottom: 10rem;
     @media screen and (max-width: 600px) {
         margin-bottom: 6rem;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: -10px;
+        margin-right: -10px;
     }
     // &:last-child{
     //     margin-bottom: 0;

@@ -12,6 +12,7 @@
         "Timeline-Mobile Date-Mobile Date-Mobile"
         "Timeline-Mobile Job-Mobile Job-Mobile";
         column-gap: 3rem;
+        grid-template-columns: auto 1fr 0fr;
     }
     @media screen and (max-width: 480px){
         column-gap: 1.5rem;
@@ -60,7 +61,9 @@
     .job__company-and-description{
 
         padding-bottom: 10rem;
-
+        @media screen and (max-width: 480px) {
+            margin-right: -20px;
+        }
 
 
         .job__company{
@@ -70,7 +73,7 @@
         }
 
         .job__description{
-          
+            padding-right: 20px;
             @media screen and (max-width: 550px){
                 
                 p{
@@ -80,6 +83,7 @@
             }
             @media screen and (max-width: 480px){
                 font-size: var(--font-size-md);
+                padding-right: 0;
             }
         }
 
