@@ -29,6 +29,7 @@ app-root {
         @media screen and (max-width: 600px){
           width: 54px;
           min-width: 54px;
+          margin-right: auto;
         }
         svg{
           #border-effect{
@@ -164,7 +165,7 @@ app-root {
     margin: 0 auto 30px;
 
     @media screen and (max-width: 690px){
-
+      margin-top: -40px;
     }
 
     svg {
