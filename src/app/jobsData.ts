@@ -8,7 +8,7 @@ export const jobsData = [
     { 
         'date': '2015-2019',
         'company': 'Hunter Industries',
-        'description': 'Main web developer in the marketing department working closing with UX/UI designer to implement design mockups for new websites, themes and features in a Drupal multisite codebase.',
+        'description': 'Main web developer in the marketing department working closely with UX/UI designer to implement design mockups for new websites, themes and features in a Drupal multisite codebase.',
         'title': 'Web Developer'
     },
     { 
