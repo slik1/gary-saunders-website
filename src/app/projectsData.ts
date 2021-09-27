@@ -29,7 +29,6 @@ export const projectsData = [
         'images': [
             { 'src': '../../../assets/projects/cellkit/screen1.png'},
             { 'src': '../../../assets/projects/cellkit/screen2.png'},
-            { 'src': '../../../assets/projects/cellkit/screen3.png'},
         ],
         'layout': 'imgLeft',
         'screenshotType': 'mobile'

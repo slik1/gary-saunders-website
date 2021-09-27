@@ -37,7 +37,7 @@
     <!-- [cellWidth]="screenshotType == 'desktop' ? 536 : 260" -->
 
 
-        <carousel [dots]="true" [arrows]="true" class="project__images popout-border" [width]="screenshotType == 'desktop' ? 420 : 260" [height]="screenshotType == 'desktop' ? 294 : 462" [ngClass]="layout"  [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1" [arrowsOutside]=false> 
+        <carousel [dots]="false" [arrows]="false" class="project__images popout-border" [width]="screenshotType == 'desktop' ? 420 : 260" [height]="screenshotType == 'desktop' ? 294 : 462" [ngClass]="layout"  [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1" [arrowsOutside]=false> 
         
             <div class="carousel-cell" *ngFor="let image of images">
                 <img src="{{image.src}}">
