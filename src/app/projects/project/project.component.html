@@ -22,9 +22,9 @@
         </mat-chip-list>
         
 
-
+        <p *ngIf="link === 'internal'" class="project__link">(Non-public facing)</p>
         <p *ngIf="link === 'unreleased'" class="project__link">(Not launched yet!)</p>
-        <a *ngIf="link !== 'unreleased'" class="project__link" [href]="link" target="_blank"><span>Check it out!</span><mat-icon>launch</mat-icon></a>
+        <a *ngIf="link !== 'unreleased' && link !== 'internal'" class="project__link" [href]="link" target="_blank"><span>Check it out!</span><mat-icon>launch</mat-icon></a>
     </div>
 
     <!-- <div class="project__images">

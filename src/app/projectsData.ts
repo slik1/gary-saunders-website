@@ -35,6 +35,25 @@ export const projectsData = [
     },
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
+        'title': 'Centralus Tech Support',
+        'description': 'A much needed UI update to an internal app used by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop, created non-existent mobile design, then developed with Angular/TypeScript/HTML/SCSS to match mockups I created.',
+        'skills': [
+            "Adobe XD",
+            "Angular",
+            "Angular Material"
+        ],
+        'link': 'internal',
+        'images': [
+            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_2.png'},
+            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_1.png'},
+            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_3.png'},
+            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_4.png'},
+        ],
+        'layout': 'imgRight',
+        'screenshotType': 'mobile'
+    },
+    { 
+        'type': 'Project (DESIGN + DEVELOPMENT)',
         'title': 'Hunter Dripline Calculator Mobile App',
         'description': 'Designed and built a hybrid mobile app using Vue.js and Cordova (PhoneGap). This was a utility app for users to input specifications for a drip irrigation project and have the app recommend products, calculate zone totals and/or calculate a tailored run time duration.',
         'skills': [
@@ -49,7 +68,7 @@ export const projectsData = [
             { 'src': '../../../assets/projects/dripcalc/screen2.png'},
             { 'src': '../../../assets/projects/dripcalc/screen3.png'},
         ],
-        'layout': 'imgRight',
+        'layout': 'imgLeft',
         'screenshotType': 'mobile'
     },
     { 
@@ -65,7 +84,7 @@ export const projectsData = [
             { 'src': '../../../assets/projects/187/screen1.png'},
 
         ],
-        'layout': 'imgLeft',
+        'layout': 'imgRight',
         'screenshotType': 'desktop'
     },
 
