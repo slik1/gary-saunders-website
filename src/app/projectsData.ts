@@ -36,7 +36,7 @@ export const projectsData = [
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
         'title': 'Centralus Tech Support',
-        'description': 'A much needed UI update to utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop, created non-existent mobile design, then developed with Angular/TypeScript/HTML/SCSS to match mockups I created.',
+        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop, created non-existent mobile design, then developed with Angular/TypeScript/HTML/SCSS to match mockups I created.',
         'skills': [
             "Adobe XD",
             "Angular",
@@ -44,8 +44,8 @@ export const projectsData = [
         ],
         'link': 'internal',
         'images': [
-            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_2.png'},
             { 'src': '../../../assets/projects/centralus-support/project_centralus_support_1.png'},
+            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_2.png'},
             { 'src': '../../../assets/projects/centralus-support/project_centralus_support_3.png'},
             { 'src': '../../../assets/projects/centralus-support/project_centralus_support_4.png'},
         ],
