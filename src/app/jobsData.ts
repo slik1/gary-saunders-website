@@ -2,13 +2,13 @@ export const jobsData = [
     { 
         'date': '2019-Now',
         'company': 'Hunter Industries',
-        'description': 'Took on more of a researcher/designer/developer role in the software department advancing our UX/UI efforts while working with cross-functional teams to plan, design, prototype, and implement new software features.',
+        'description': 'Took on more of a researcher/designer/developer role in the software department advancing the UX/UI efforts for our flagship software while working with cross-functional teams to plan, design, prototype, and implement new software features.',
         'title': 'Front-End Developer'
     },
     { 
         'date': '2015-2019',
         'company': 'Hunter Industries',
-        'description': 'Main web developer in the marketing department working closely with UX/UI designer to implement design mockups for new websites, themes and features in a Drupal multisite codebase.',
+        'description': 'Main web developer in the marketing department working with the UX/UI designer, Web Development Manager, and Director of Marketing Content to implement design mockups, themes, and new features in Drupal multisites and hybrid mobile apps.',
         'title': 'Web Developer'
     },
     { 
