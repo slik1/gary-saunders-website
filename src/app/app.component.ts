@@ -3,6 +3,9 @@ import { ThemePalette } from '@angular/material/core';
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
 import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
+import { Howl } from "howler";
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,6 +13,8 @@ import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/l
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
+
+
 export class AppComponent implements OnInit {
   title = 'my-site';
   opened: boolean; 
@@ -23,6 +28,7 @@ export class AppComponent implements OnInit {
   showSecret: boolean = false;
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
+
 
 
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, public breakpointObserver: BreakpointObserver){
@@ -47,6 +53,15 @@ export class AppComponent implements OnInit {
       this.domSanitizer.bypassSecurityTrustResourceUrl("./assets/icon-app-store.svg")
     );
   }
+
+    // Setup the new Howl.
+    hoverSound = new Howl({
+      src: ['./assets/hover.wav']
+    });
+
+    clickSound = new Howl({
+      src: ['./assets/click.wav']
+    });
 
 
   scrollToSection(id:string){
@@ -73,6 +88,7 @@ export class AppComponent implements OnInit {
       this.isMobile = true;
       console.log('MOBILE!!!!!');
     }
+
   }
 
   ngAfterViewInit() {
@@ -85,5 +101,6 @@ export class AppComponent implements OnInit {
 
     this.checked ?  this.musicPlayer.nativeElement.play() : this.musicPlayer.nativeElement.pause();
   }
-  
+
+
 }
