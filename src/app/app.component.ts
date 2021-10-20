@@ -5,8 +5,6 @@ import { DomSanitizer } from "@angular/platform-browser";
 import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
 import { Howl } from "howler";
 
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -28,7 +26,6 @@ export class AppComponent implements OnInit {
   showSecret: boolean = false;
 
   @ViewChild('musicPlayer') musicPlayer: ElementRef;
-
 
 
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer, public breakpointObserver: BreakpointObserver){
@@ -54,7 +51,6 @@ export class AppComponent implements OnInit {
     );
   }
 
-    // Setup the new Howl.
     hoverSound = new Howl({
       src: ['./assets/hover.wav']
     });
@@ -62,7 +58,11 @@ export class AppComponent implements OnInit {
     clickSound = new Howl({
       src: ['./assets/click.wav']
     });
-
+    
+    secretSound = new Howl({
+      src: ['./assets/trumpet.wav'],
+      volume: 0.3
+    });
 
   scrollToSection(id:string){
 
@@ -72,14 +72,13 @@ export class AppComponent implements OnInit {
       setTimeout(() =>
         el.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'}), 0);
     }
-
-    //document.getElementById(el).scrollIntoView({ behavior: "smooth"});
   }
 
   secretCode($event){
     this.secretCount += 1;
     if(this.secretCount == 5){
       this.showSecret = true;
+      this.secretSound.play();
     }
   }
 
@@ -93,12 +92,11 @@ export class AppComponent implements OnInit {
 
   ngAfterViewInit() {
       console.log(this.musicPlayer.nativeElement);     
-      console.log('this is in ngAfterViewInit()!...............') 
+
   }
 
   changed(){
     console.log('changedddd................');
-
     this.checked ?  this.musicPlayer.nativeElement.play() : this.musicPlayer.nativeElement.pause();
   }
 
