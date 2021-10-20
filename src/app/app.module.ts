@@ -38,7 +38,7 @@ import { PraiseComponent } from './praises/praise/praise.component';
     MaterialModule,
     FormsModule,
     IvyCarouselModule,
-    AnimateModule,//.init({ mode: 'scrolling' })
+    AnimateModule,
     HttpClientModule
   ],
   providers: [],
