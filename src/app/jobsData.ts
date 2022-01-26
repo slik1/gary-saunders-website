@@ -1,5 +1,11 @@
 export const jobsData = [
     { 
+        'date': '2022-Now',
+        'company': 'Hunter Industries',
+        'description': 'Lead the UX/UI efforts for our software department. Work towards creating and integrating a set of consistent design principles and reusable components to use in a design system for all company software/apps.',
+        'title': 'Senior UX/UI Engineer'
+    },
+    { 
         'date': '2019-Now',
         'company': 'Hunter Industries',
         'description': 'Took on more of a researcher/designer/developer role in the software department advancing the UX/UI efforts for our flagship software while working with cross-functional teams to plan, design, prototype, and implement new software features.',
