@@ -1,5 +1,23 @@
 export const projectsData = [
     { 
+        'type': 'UX/UI Improvements (DESIGN + DEVELOPMENT)',
+        'title': 'Centralus Tech Support (Desktop)',
+        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop then developed with Angular / TypeScript / HTML / SCSS.',
+        'skills': [
+            "Adobe XD",
+            "Angular",
+            "Angular Material"
+        ],
+        'link': 'internal',
+        'images': [
+            { 'src': '../../../assets/projects/centralus-support/support-after.png'},
+            { 'src': '../../../assets/projects/centralus-support/support-before.png'},
+
+        ],
+        'layout': 'imgRight',
+        'screenshotType': 'desktop'
+    },
+    { 
         'type': 'UX/UI Improvement',
         'title': 'Modal Window',
         'description': 'PROBLEM: Users were bypassing a critial step in the user flow when setting up a cellular-enabled IOT irrigation controller. SOLUTION: Adjust the messaging and action button labels to make it more clear what needs to occur and how to accomplish that action.',
@@ -13,7 +31,7 @@ export const projectsData = [
             { 'src': '../../../assets/projects/zipit/zipit-modal-after.png'},
             { 'src': '../../../assets/projects/zipit/zipit-modal-before.png'},
         ],
-        'layout': 'imgRight',
+        'layout': 'imgLeft',
         'screenshotType': 'desktop'
     },
     { 
@@ -52,8 +70,8 @@ export const projectsData = [
     },
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
-        'title': 'Centralus Tech Support',
-        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop, created non-existent mobile design, then developed with Angular / TypeScript / HTML / SCSS.',
+        'title': 'Centralus Tech Support (Mobile)',
+        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Created non-existent mobile design, then developed with Angular / TypeScript / HTML / SCSS.',
         'skills': [
             "Adobe XD",
             "Angular",
