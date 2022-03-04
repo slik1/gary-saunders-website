@@ -1,5 +1,22 @@
 export const projectsData = [
     { 
+        'type': 'UX/UI Improvement',
+        'title': 'Modal Window',
+        'description': 'PROBLEM: Users were bypassing a critial step in the user flow when setting up a cellular-enabled IOT irrigation controller. SOLUTION: Adjust the messaging and action button labels to make it more clear what needs to occur and how to accomplish that action.',
+        'skills': [
+            "Adobe XD",
+            "HTML/SCSS/JS",
+            "Responding to feedback"
+        ],
+        'link': 'https://centralus.hunterindustries.com/',
+        'images': [
+            { 'src': '../../../assets/projects/zipit/zipit-modal-after.png'},
+            { 'src': '../../../assets/projects/zipit/zipit-modal-before.png'},
+        ],
+        'layout': 'imgRight',
+        'screenshotType': 'desktop'
+    },
+    { 
         'type': 'Software Feature (DESIGN + DEVELOPMENT)',
         'title': 'Centralus - Scheduling',
         'description': 'A specialized irrigation software called Centralus needed a specialized interface for the most important functionality: setting the irrigation schedules. Many iterative mockups were designed, prototypes were developed, and UI meetings were conducted over the course of many months to achieve a successful rollout of this much anticipated new feature.',
