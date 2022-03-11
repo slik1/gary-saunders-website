@@ -14,26 +14,26 @@ export const projectsData = [
             { 'src': '../../../assets/projects/centralus-support/support-before.png'},
 
         ],
-        'layout': 'imgRight',
+        'layout': 'imgBottom',
         'screenshotType': 'desktop'
     },
-    { 
-        'type': 'UX/UI Improvement',
-        'title': 'Modal Window',
-        'description': 'PROBLEM: Users were bypassing a critial step in the user flow when setting up a cellular-enabled IOT irrigation controller. SOLUTION: Adjust the messaging and action button labels to make it more clear what needs to occur and how to accomplish that action.',
-        'skills': [
-            "Adobe XD",
-            "HTML/SCSS/JS",
-            "Responding to feedback"
-        ],
-        'link': 'https://centralus.hunterindustries.com/',
-        'images': [
-            { 'src': '../../../assets/projects/zipit/zipit-modal-after.png'},
-            { 'src': '../../../assets/projects/zipit/zipit-modal-before.png'},
-        ],
-        'layout': 'imgLeft',
-        'screenshotType': 'desktop'
-    },
+    // { 
+    //     'type': 'UX/UI Improvement',
+    //     'title': 'Modal Window',
+    //     'description': 'PROBLEM: Users were bypassing a critial step in the user flow when setting up a cellular-enabled IOT irrigation controller. SOLUTION: Adjust the messaging and action button labels to make it more clear what needs to occur and how to accomplish that action.',
+    //     'skills': [
+    //         "Adobe XD",
+    //         "HTML/SCSS/JS",
+    //         "Responding to feedback"
+    //     ],
+    //     'link': 'https://centralus.hunterindustries.com/',
+    //     'images': [
+    //         { 'src': '../../../assets/projects/zipit/zipit-modal-after.png'},
+    //         { 'src': '../../../assets/projects/zipit/zipit-modal-before.png'},
+    //     ],
+    //     'layout': 'imgLeft',
+    //     'screenshotType': 'desktop'
+    // },
     { 
         'type': 'Software Feature (DESIGN + DEVELOPMENT)',
         'title': 'Centralus - Scheduling',
@@ -97,7 +97,7 @@ export const projectsData = [
             "Framework7",
             "Sketch"
         ],
-        'link': 'https://play.google.com/store/apps/details?id=com.hunter.dripcalculator&hl=en_US&gl=US',
+        'link': 'mobile-app',
         'images': [
             { 'src': '../../../assets/projects/dripcalc/screen1.png'},
             { 'src': '../../../assets/projects/dripcalc/screen2.png'},
@@ -116,10 +116,11 @@ export const projectsData = [
         ],
         'link': 'https://187killerpads.com/products/custom-pad',
         'images': [
-            { 'src': '../../../assets/projects/187/screen1.png'},
+            { 'src': '../../../assets/projects/187/187-1.png'},
+            { 'src': '../../../assets/projects/187/187-2.png'},
 
         ],
-        'layout': 'imgRight',
+        'layout': 'imgBottom',
         'screenshotType': 'desktop'
     },
 

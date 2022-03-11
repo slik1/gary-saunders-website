@@ -80,6 +80,11 @@ app-project{
     
             }
         }
+
+        &.desktop.imgBottom{
+            grid-template-columns: 100%;
+
+        }
     
     
     
@@ -136,6 +141,18 @@ app-project{
         .project__images{
             width: 536px;
             max-width: 100%;
+            .carousel-container{
+               
+                .carousel-dots{
+                    .carousel-dot-active{
+                        background-color: var(--color-light-green);
+                    }
+                    .carousel-dot{
+                        border-color: var(--color-light-green);
+                    }
+                }
+            }
+
             @media screen and (max-width: 600px){
                 display: none;
             }
@@ -189,6 +206,21 @@ app-project{
             }
         }
     
+        .imgBottom{
+            &:before{
+                content: "";
+                display: inline-block;
+                border: 6px solid var(--color-light-green);
+                position: absolute;
+                top: -30px;
+                width: 100%;
+                height: 100%;
+                border-radius: 6px;
+                right: -30px;
+                z-index: -1;
+            }
+        }
+    
         .project__image_mobile{
             display: none;
             width: 100%;
@@ -221,47 +253,23 @@ app-project{
         bottom: -26px;
     }
     
- 
+    ::ng-deep .carousel-dots{
+        .carousel-dot{
+            border-color: var(--color-light-green);
+        }
+    }
+
+    
+    
 
 
 }
 
 
-
-
-
-
-// :host{
-        
-//     background-color: #f7f7f7;
-//     display: block;
-//     border-radius: 10px;
-//     padding: 6rem;
-//     margin-bottom: 4rem;
-//     @media screen and (max-width: 1000px) {
-//         padding: 4rem 5rem 4rem 4rem;
-//     }
-//     @media screen and (max-width: 600px) {
-//         padding: 2rem;
-//         margin-bottom: 2rem;
-//     }
-//     @media screen and (max-width: 420px) {
-//         padding: 1.5rem;
-//         border: none;
-//         margin-left: -10px;
-//         margin-right: -10px;
-//     }
-// }
-
-// :host ::ng-deep .project__images{
-
-//     .carousel-arrows{
-//         display: flex;
-//         justify-content: space-between;
-//         height: 40px;
-//         .carousel-arrow{
-//             position: relative;
-//             box-shadow: none;
-//         }
-//     }
-//   }
+app-project[ng-reflect-screenshot-type='desktop']{
+    @media screen and (max-width: 600px) {
+        .project__image_mobile{
+            background-size: contain;
+        }
+    }
+}

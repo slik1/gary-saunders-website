@@ -18,15 +18,29 @@
 
         <p *ngIf="link === 'internal'" class="project__link">(Non-public facing)</p>
         <p *ngIf="link === 'unreleased'" class="project__link">(Not launched yet!)</p>
-        <a *ngIf="link !== 'unreleased' && link !== 'internal'" class="project__link" [href]="link"
+        <a *ngIf="link !== 'unreleased' && link !== 'internal' && link !== 'mobile-app'" class="project__link" [href]="link"
             target="_blank"><span>Check it out!</span>
             <mat-icon>launch</mat-icon>
         </a>
+
+        <div class="mobile-app-links" *ngIf="link === 'mobile-app'">
+            <a class="project__link" href="https://apps.apple.com/us/app/hunter-dripline-calculator/id1394300266">
+                <span>Check it out! (iOS)</span>
+                <mat-icon>launch</mat-icon>
+            </a>
+            <a class="project__link" href="https://play.google.com/store/apps/details?id=com.hunter.dripcalculator&hl=en_US&gl=US">
+                <span>Check it out! (Android)</span>
+                <mat-icon>launch</mat-icon>
+            </a>
+        </div>
+
+
+       
     </div>
 
     <carousel [dots]="true" [arrows]="false" class="project__images popout-border"
-        [width]="screenshotType == 'desktop' ? 420 : 260" [height]="screenshotType == 'desktop' ? 294 : 462"
-        [ngClass]="layout" [cellWidth]="screenshotType == 'desktop' ? 536 : 260" [cellsToShow]="1"
+        [width]="screenshotType == 'desktop' ? 810 : 260" [height]="screenshotType == 'desktop' ? 456 : 462"
+        [ngClass]="layout" [cellWidth]="screenshotType == 'desktop' ? 810 : 260" [cellsToShow]="1"
         [arrowsOutside]=false>
         <div class="carousel-cell" *ngFor="let image of images">
             <img src="{{image.src}}">
