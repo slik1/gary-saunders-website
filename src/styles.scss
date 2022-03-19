@@ -164,18 +164,18 @@ a {
 section {
   margin-bottom: 26rem;
   &:last-of-type {
-    margin-bottom: 20rem;
+    margin-bottom: 7rem;
   }
   @media screen and (max-width: 850px) {
     margin-bottom: 20rem;
     &:last-of-type {
-      margin-bottom: 10rem;
+      margin-bottom: 6rem;
     }
   }
   @media screen and (max-width: 480px) {
     margin-bottom: 10rem;
     &:last-of-type {
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
     }
   }
   .inner {
@@ -193,11 +193,25 @@ section {
 }
 
 .props {
-  text-align: center;
   font-size: var(--font-size-small);
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  &:hover{
+    background: url('../src/assets/hover-secret.svg');
+    background-repeat: no-repeat;
+    background-size: 170px auto;
+    background-position: 78% top;
+  }
   @media screen and (max-width: 1100px) {
-    text-align: left;
+    justify-content: flex-start;
     padding-right: 150px;
+  }
+  @media screen and (max-width: 1100px) {
+    &:hover{
+      background-position: 84% 45%;
+    }
   }
 }
 

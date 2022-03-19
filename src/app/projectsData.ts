@@ -35,9 +35,9 @@ export const projectsData = [
     //     'screenshotType': 'desktop'
     // },
     { 
-        'type': 'Web App (DESIGN + DEVELOPMENT) - Ongoing',
+        'type': 'Web App (DESIGN + DEVELOPMENT)',
         'title': 'Centralus',
-        'description': 'A specialized irrigation software called Centralus needed a specialized interface for the most important functionality: setting the irrigation schedules. Many iterative mockups were designed, prototypes were developed, and UI meetings were conducted over the course of many months to achieve a successful rollout of this much anticipated new feature.',
+        'description': 'Continually working with the software engineering teams to improve user interfaces and add new features in a specialized global IOT irrigation software called Centralus. Incorporating Angular Material to streamline and standardize the app UI while it is being migrated from AngularJS to Angular Next. Many iterative mockups were designed, prototypes were developed, and UI meetings were conducted over the course of many months to achieve successful rollouts of new features such as ACC2 scheduling, changing of device serial, and the cell module activation process.',
         'skills': [
             "Angular",
             "Angular Material",
@@ -45,8 +45,10 @@ export const projectsData = [
         ],
         'link': 'https://centralus.hunterindustries.com/',
         'images': [
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling.png'},
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_scheduling_2.png'},
+            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_1.png'},
+            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_2.png'},
+            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_3.png'},
+            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_4.png'},
         ],
         'layout': 'imgRight',
         'screenshotType': 'mobile'
@@ -54,7 +56,7 @@ export const projectsData = [
     { 
         'type': 'Project (DESIGN)',
         'title': 'Hunter Cellkit Mobile App',
-        'description': 'Worked with another vendor Digi to customize their Digi XBee Xamarin mobile app interface for a modified version needed to work with our IOT central irrigation software. This was also to bring the design more in line with the Hunter branding and similar apps in the Hunter family.',
+        'description': 'Worked with another vendor Digi to customize the Digi XBee Xamarin mobile app interface for a modified version needed to work with our IOT central irrigation software to bring the design more in line with the Hunter branding and similar apps in the Hunter family.',
         'skills': [
             "Adobe XD",
             "Xamarin",
@@ -119,7 +121,7 @@ export const projectsData = [
         ],
         'link': 'https://www.hunterindustries.com/',
         'images': [
-            { 'src': '../../../assets/projects/hunter-website/project_hunter_website.jpeg'},
+            { 'src': '../../../assets/projects/hunter-website/project_hunter_website.png'},
             
         ],
         'layout': 'imgBottom',
