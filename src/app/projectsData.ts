@@ -35,8 +35,8 @@ export const projectsData = [
     //     'screenshotType': 'desktop'
     // },
     { 
-        'type': 'Software Feature (DESIGN + DEVELOPMENT)',
-        'title': 'Centralus - Scheduling',
+        'type': 'Web App (DESIGN + DEVELOPMENT) - Ongoing',
+        'title': 'Centralus',
         'description': 'A specialized irrigation software called Centralus needed a specialized interface for the most important functionality: setting the irrigation schedules. Many iterative mockups were designed, prototypes were developed, and UI meetings were conducted over the course of many months to achieve a successful rollout of this much anticipated new feature.',
         'skills': [
             "Angular",
@@ -105,6 +105,25 @@ export const projectsData = [
         ],
         'layout': 'imgLeft',
         'screenshotType': 'mobile'
+    },
+    { 
+        'type': 'Website (DEVELOPMENT)',
+        'title': 'Hunter Website',
+        'description': 'Main marketing website for the company that needed a modern facelift. Turned static mockups provided by UX/UI designer into responsive and functional webpages. Performed custom Drupal module development and ongoing feature enhancements.',
+        'skills': [
+            "Drupal",
+            "HTML5",
+            "SCSS",
+            "PHP",
+            "Javascript/JQuery"
+        ],
+        'link': 'https://www.hunterindustries.com/',
+        'images': [
+            { 'src': '../../../assets/projects/hunter-website/project_hunter_website.jpeg'},
+            
+        ],
+        'layout': 'imgBottom',
+        'screenshotType': 'desktop'
     },
     { 
         'type': 'Throwback Project (DESIGN + DEVELOPMENT)',
