@@ -1,22 +1,5 @@
 export const projectsData = [
-    { 
-        'type': 'UX/UI Improvements (DESIGN + DEVELOPMENT)',
-        'title': 'Centralus Tech Support (Desktop)',
-        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop then developed with Angular / TypeScript / HTML / SCSS.',
-        'skills': [
-            "Adobe XD",
-            "Angular",
-            "Angular Material"
-        ],
-        'link': 'internal',
-        'images': [
-            { 'src': '../../../assets/projects/centralus-support/support-after.png'},
-            { 'src': '../../../assets/projects/centralus-support/support-before.png'},
 
-        ],
-        'layout': 'imgBottom',
-        'screenshotType': 'desktop'
-    },
     // { 
     //     'type': 'UX/UI Improvement',
     //     'title': 'Modal Window',
@@ -52,6 +35,24 @@ export const projectsData = [
         ],
         'layout': 'imgRight',
         'screenshotType': 'mobile'
+    },
+    { 
+        'type': 'UX/UI Improvements (DESIGN + DEVELOPMENT)',
+        'title': 'Centralus Tech Support (Desktop)',
+        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop then developed with Angular / TypeScript / HTML / SCSS.',
+        'skills': [
+            "Adobe XD",
+            "Angular",
+            "Angular Material"
+        ],
+        'link': 'internal',
+        'images': [
+            { 'src': '../../../assets/projects/centralus-support/support-after.png'},
+            { 'src': '../../../assets/projects/centralus-support/support-before.png'},
+
+        ],
+        'layout': 'imgBottom',
+        'screenshotType': 'desktop'
     },
     { 
         'type': 'Project (DESIGN)',
@@ -111,13 +112,14 @@ export const projectsData = [
     { 
         'type': 'Website (DEVELOPMENT)',
         'title': 'Hunter Website',
-        'description': 'Main marketing website for the company that needed a modern facelift. Turned static mockups provided by UX/UI designer into responsive and functional webpages. Performed custom Drupal module development and ongoing feature enhancements.',
+        'description': 'Main marketing website for the company that needed a modern facelift. Turned static mockups provided by the UX/UI designer into responsive and functional webpages. Performed custom Drupal module development and ongoing feature enhancements.',
         'skills': [
             "Drupal",
             "HTML5",
             "SCSS",
             "PHP",
-            "Javascript/JQuery"
+            "Javascript/JQuery",
+            "Foundation"
         ],
         'link': 'https://www.hunterindustries.com/',
         'images': [
@@ -130,10 +132,12 @@ export const projectsData = [
     { 
         'type': 'Throwback Project (DESIGN + DEVELOPMENT)',
         'title': '187 Killer Pads Customizer',
-        'description': 'A super fun side project I did a few years ago for a good friend. Users choose colors along with other options for each section of a skateboarding kneepad and at the end the user can click a button to purchase their creation.',
+        'description': 'A super fun side project I did a few years ago for a good friend. Users choose colors along with other options for each section of a skateboarding kneepad and at the end the user can click a button to purchase their creation. I designed and built the whole thing from scratch.',
         'skills': [
             "Sketch",
-            "HTML/CSS/JS"
+            "HTML",
+            "CSS",
+            "JavaScript/jQuery"
         ],
         'link': 'https://187killerpads.com/products/custom-pad',
         'images': [
