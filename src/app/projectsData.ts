@@ -55,6 +55,24 @@ export const projectsData = [
         'screenshotType': 'desktop'
     },
     { 
+        'type': 'App Feature (DESIGN)',
+        'title': 'Pilot CCS - POGO Integration',
+        'description': 'The team working on a golf course irrigation management software came to me with a need to integrate a new feature into the existing station edit side sheet. After coming to a mutual understanding of the desired functionality and visual display needed, I designed an appropriate solution and worked with the software engineers (mostly on the markup and styles) to implement the new feature which received much positive feedback from stakeholders and users.',
+        'skills': [
+            "Adobe XD",
+            "Angular",
+            "Angular Material",
+            "HTML",
+            "SCSS"
+        ],
+        'link': 'internal',
+        'images': [
+            { 'src': '../../../assets/projects/pilot/pogo-feature.png'},
+        ],
+        'layout': 'imgBottom',
+        'screenshotType': 'desktop'
+    },
+    { 
         'type': 'Project (DESIGN)',
         'title': 'Hunter Cellkit Mobile App',
         'description': 'Worked with another vendor Digi to customize the Digi XBee Xamarin mobile app interface for a modified version needed to work with our IOT central irrigation software to bring the design more in line with the Hunter branding and similar apps in the Hunter family.',
