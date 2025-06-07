@@ -10,7 +10,7 @@ app-project{
     @media screen and (max-width: 1000px) {
         padding: 4rem 5rem 4rem 4rem;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 850px) {
         padding: 2rem;
         margin-bottom: 2rem;
     }
@@ -138,22 +138,34 @@ app-project{
             
     
         }
-        .project__images{
-            width: 536px;
-            max-width: 100%;
-            .carousel-container{
+        // .project__images{
+        //     width: 536px;
+        //     max-width: 100%;
+        //     .carousel-container{
                
-                .carousel-dots{
-                    .carousel-dot-active{
-                        background-color: var(--color-light-green);
-                    }
-                    .carousel-dot{
-                        border-color: var(--color-light-green);
-                    }
-                }
+        //         .carousel-dots{
+        //             .carousel-dot-active{
+        //                 background-color: var(--color-light-green);
+        //             }
+        //             .carousel-dot{
+        //                 border-color: var(--color-light-green);
+        //             }
+        //         }
+        //     }
+
+        //     @media screen and (max-width: 850px){
+        //         display: none;
+        //     }
+        // }
+
+        .project__images{
+            width: 100%;
+            max-width: 100%;
+            img{
+                width: 100%;
             }
 
-            @media screen and (max-width: 600px){
+            @media screen and (max-width: 850px){
                 display: none;
             }
         }
@@ -224,7 +236,7 @@ app-project{
         .project__image_mobile{
             display: none;
             width: 100%;
-            height: 220px;
+            height: 50vw;
             overflow: hidden;
             border-radius: 10px;
             background-repeat: no-repeat;
@@ -235,7 +247,7 @@ app-project{
                 max-width: 100%;
                 width: 100%;
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 850px) {
                 display: block;
             }
         }
@@ -267,7 +279,7 @@ app-project{
 
 
 app-project[ng-reflect-screenshot-type='desktop']{
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 850px) {
         .project__image_mobile{
             background-size: contain;
         }

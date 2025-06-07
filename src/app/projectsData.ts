@@ -27,33 +27,28 @@ export const projectsData = [
             "Adobe XD"
         ],
         'link': 'https://centralus.hunterindustries.com/',
-        'images': [
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_1.png'},
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_2.png'},
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_3.png'},
-            { 'src': '../../../assets/projects/centralus-scheduling/project_centralus_4.png'},
-        ],
+        'image': '../../../assets/projects/centralus-scheduling/project_centralus_landing.png',
         'layout': 'imgRight',
         'screenshotType': 'mobile'
     },
-    { 
-        'type': 'UX/UI Improvements (DESIGN + DEVELOPMENT)',
-        'title': 'Centralus Tech Support (Desktop)',
-        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop then developed with Angular / TypeScript / HTML / SCSS.',
-        'skills': [
-            "Adobe XD",
-            "Angular",
-            "Angular Material"
-        ],
-        'link': 'internal',
-        'images': [
-            { 'src': '../../../assets/projects/centralus-support/support-after.png'},
-            { 'src': '../../../assets/projects/centralus-support/support-before.png'},
+    // { 
+    //     'type': 'UX/UI Improvements (DESIGN + DEVELOPMENT)',
+    //     'title': 'Centralus Tech Support (Desktop)',
+    //     'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Improved UI design for desktop then developed with Angular / TypeScript / HTML / SCSS.',
+    //     'skills': [
+    //         "Adobe XD",
+    //         "Angular",
+    //         "Angular Material"
+    //     ],
+    //     'link': 'internal',
+    //     'images': [
+    //         { 'src': '../../../assets/projects/centralus-support/support-after.png'},
+    //         { 'src': '../../../assets/projects/centralus-support/support-before.png'},
 
-        ],
-        'layout': 'imgBottom',
-        'screenshotType': 'desktop'
-    },
+    //     ],
+    //     'layout': 'imgBottom',
+    //     'screenshotType': 'desktop'
+    // },
     { 
         'type': 'App Feature (DESIGN)',
         'title': 'Pilot CCS - POGO Integration',
@@ -66,9 +61,7 @@ export const projectsData = [
             "SCSS"
         ],
         'link': 'internal',
-        'images': [
-            { 'src': '../../../assets/projects/pilot/pogo-feature.png'},
-        ],
+        'image': '../../../assets/projects/pilot/pogo-feature.png',
         'layout': 'imgBottom',
         'screenshotType': 'desktop'
     },
@@ -81,33 +74,30 @@ export const projectsData = [
             "Xamarin",
             "Vendor Relations"
         ],
-        'link': 'unreleased',
-        'images': [
-            { 'src': '../../../assets/projects/cellkit/screen1.png'},
-            { 'src': '../../../assets/projects/cellkit/screen2.png'},
-        ],
+        'link': 'cellkit-mobile-app',
+        'image': '../../../assets/projects/cellkit/screen1.png',
         'layout': 'imgLeft',
         'screenshotType': 'mobile'
     },
-    { 
-        'type': 'Project (DESIGN + DEVELOPMENT)',
-        'title': 'Centralus Tech Support (Mobile)',
-        'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Created non-existent mobile design, then developed with Angular / TypeScript / HTML / SCSS.',
-        'skills': [
-            "Adobe XD",
-            "Angular",
-            "Angular Material"
-        ],
-        'link': 'internal',
-        'images': [
-            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_3.png'},
-            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_2.png'},
-            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_1.png'},
-            { 'src': '../../../assets/projects/centralus-support/project_centralus_support_4.png'},
-        ],
-        'layout': 'imgRight',
-        'screenshotType': 'mobile'
-    },
+    // { 
+    //     'type': 'Project (DESIGN + DEVELOPMENT)',
+    //     'title': 'Centralus Tech Support (Mobile)',
+    //     'description': 'A much needed UI update to a utility app used internally by the tech support team for troubleshooting IOT irrigation controllers. Created non-existent mobile design, then developed with Angular / TypeScript / HTML / SCSS.',
+    //     'skills': [
+    //         "Adobe XD",
+    //         "Angular",
+    //         "Angular Material"
+    //     ],
+    //     'link': 'internal',
+    //     'images': [
+    //         { 'src': '../../../assets/projects/centralus-support/project_centralus_support_3.png'},
+    //         { 'src': '../../../assets/projects/centralus-support/project_centralus_support_2.png'},
+    //         { 'src': '../../../assets/projects/centralus-support/project_centralus_support_1.png'},
+    //         { 'src': '../../../assets/projects/centralus-support/project_centralus_support_4.png'},
+    //     ],
+    //     'layout': 'imgRight',
+    //     'screenshotType': 'mobile'
+    // },
     { 
         'type': 'Project (DESIGN + DEVELOPMENT)',
         'title': 'Hunter Dripline Calculator Mobile App',
@@ -118,17 +108,13 @@ export const projectsData = [
             "Framework7",
             "Sketch"
         ],
-        'link': 'mobile-app',
-        'images': [
-            { 'src': '../../../assets/projects/dripcalc/screen1.png'},
-            { 'src': '../../../assets/projects/dripcalc/screen2.png'},
-            { 'src': '../../../assets/projects/dripcalc/screen3.png'},
-        ],
+        'link': 'dripline-calculator-mobile-app',
+        'image': '../../../assets/projects/dripcalc/screen1.png',
         'layout': 'imgLeft',
         'screenshotType': 'mobile'
     },
     { 
-        'type': 'Website (DEVELOPMENT)',
+        'type': 'Throwback Project (DEVELOPMENT)',
         'title': 'Hunter Website',
         'description': 'Main marketing website for the company that needed a modern facelift. Turned static mockups provided by the UX/UI designer into responsive and functional webpages. Performed custom Drupal module development and ongoing feature enhancements.',
         'skills': [
@@ -140,10 +126,7 @@ export const projectsData = [
             "Foundation"
         ],
         'link': 'https://www.hunterindustries.com/',
-        'images': [
-            { 'src': '../../../assets/projects/hunter-website/project_hunter_website.png'},
-            
-        ],
+        'image': '../../../assets/projects/hunter-website/project_hunter_website.png',
         'layout': 'imgBottom',
         'screenshotType': 'desktop'
     },
@@ -158,11 +141,7 @@ export const projectsData = [
             "JavaScript/jQuery"
         ],
         'link': 'https://187killerpads.com/products/custom-pad',
-        'images': [
-            { 'src': '../../../assets/projects/187/187-1.png'},
-            { 'src': '../../../assets/projects/187/187-2.png'},
-
-        ],
+        'image': '../../../assets/projects/187/187-1.png',
         'layout': 'imgBottom',
         'screenshotType': 'desktop'
     },

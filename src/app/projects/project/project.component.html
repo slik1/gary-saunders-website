@@ -4,7 +4,7 @@
         <div class="project__type">{{type}}</div>
         <h3 class="project__title">{{title}}</h3>
 
-        <div class="project__image_mobile" [ngStyle]="{ 'background-image': 'url(' + images[0].src + ')'}">
+        <div class="project__image_mobile" [ngStyle]="{ 'background-image': 'url(' + image + ')'}">
         </div>
 
         <div class="project__description">
@@ -16,14 +16,14 @@
         </mat-chip-list>
 
 
-        <p *ngIf="link === 'internal'" class="project__link">(Non-public facing)</p>
+        <p *ngIf="link === 'internal'" class="project__link">(Paywalled)</p>
         <p *ngIf="link === 'unreleased'" class="project__link">(Not launched yet!)</p>
-        <a *ngIf="link !== 'unreleased' && link !== 'internal' && link !== 'mobile-app'" class="project__link" [href]="link"
+        <a *ngIf="link !== 'unreleased' && link !== 'internal' && link !== 'dripline-calculator-mobile-app' && link !== 'cellkit-mobile-app'" class="project__link" [href]="link"
             target="_blank"><span>Check it out!</span>
             <mat-icon>launch</mat-icon>
         </a>
 
-        <div class="mobile-app-links" *ngIf="link === 'mobile-app'">
+        <div class="mobile-app-links" *ngIf="link === 'dripline-calculator-mobile-app'">
             <a class="project__link" href="https://apps.apple.com/us/app/hunter-dripline-calculator/id1394300266">
                 <span>Check it out! (iOS)</span>
                 <mat-icon>launch</mat-icon>
@@ -33,18 +33,30 @@
                 <mat-icon>launch</mat-icon>
             </a>
         </div>
+        <div class="mobile-app-links" *ngIf="link === 'cellkit-mobile-app'">
+            <a class="project__link" href="https://apps.apple.com/us/app/hunter-cellkit/id1553811771">
+                <span>Check it out! (iOS)</span>
+                <mat-icon>launch</mat-icon>
+            </a>
+            <a class="project__link" href="https://play.google.com/store/apps/details?id=com.hunter.cellkit&hl=en_US&pli=1">
+                <span>Check it out! (Android)</span>
+                <mat-icon>launch</mat-icon>
+            </a>
+        </div>
 
 
        
     </div>
 
-    <carousel [dots]="true" [arrows]="false" class="project__images popout-border"
+    <!-- <carousel [dots]="true" [arrows]="false" class="project__images popout-border"
         [width]="screenshotType == 'desktop' ? 810 : 260" [height]="screenshotType == 'desktop' ? 456 : 462"
         [ngClass]="layout" [cellWidth]="screenshotType == 'desktop' ? 810 : 260" [cellsToShow]="1"
         [arrowsOutside]=false>
         <div class="carousel-cell" *ngFor="let image of images">
             <img src="{{image.src}}">
         </div>
-    </carousel>
-
+    </carousel> -->
+    <div class="project__images popout-border">
+        <img src="{{image}}">
+    </div>
 </div>
